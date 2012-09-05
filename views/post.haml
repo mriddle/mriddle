@@ -1,0 +1,6 @@
+%post
+  %div.date= post.date.strftime("%e %b, %Y")
+  %div.content
+    %h1
+      %a{href: post.permalink}= post.title
+    = textile post.content
