@@ -1,6 +1,6 @@
 class Blog < Sinatra::Base
   get '/:year/:month/:day/:post' do
-    filename = params.values_at("year", "month", "day", "post").join('_') + '.txt'
+    filename = params.values_at("year", "month", "day", "post").join('_') + '.md'
     @post = Post.find_by_filename( filename )
     haml :show_post
   end
@@ -19,14 +19,14 @@ end
 class Post
   def self.all
     posts = []
-    Dir.glob('posts/*.txt') do |f|
+    Dir.glob('posts/*.md') do |f|
       posts << find_by_filename( f.split('/').last )
     end
     posts.sort_by(&:date).reverse
   end
 
   def self.find_by_filename( filename )
-    file_hash = filename.gsub('.txt', '').split('_')
+    file_hash = filename.gsub('.md', '').split('_')
     post = OpenStruct.new
     year = file_hash.shift
     month = file_hash.shift
