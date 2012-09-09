@@ -1,8 +1,8 @@
 class Blog < Sinatra::Base
   get '/:year/:month/:day/:post' do
     filename = params.values_at("year", "month", "day", "post").join('_') + '.txt'
-    @article = Post.find_by_filename( filename )
-    haml :show_article
+    @post = Post.find_by_filename( filename )
+    haml :show_post
   end
 
   get '/stylesheet.css' do
