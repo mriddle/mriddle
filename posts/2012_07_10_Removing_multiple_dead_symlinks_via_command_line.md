@@ -1,8 +1,8 @@
 Stumbled upon this one today, love it! Easily remove all broken sym links in the current directory.
 
----
+<pre>
 $ find -L -maxdepth 1 -type l -delete
----
+</pre>
 
 **Breakdown:** 
 The "-L" option means to always follow symbolic links
