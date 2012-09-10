@@ -1,5 +1,5 @@
-maintainer        "Chris Aitchison"
-maintainer_email  "chris@thinknew.com.au"
+maintainer        "Matthew Riddle"
+maintainer_email  "mriddle89@gmail.com"
 license           "Apache 2.0"
 description       "Installs and configures nginx"
 version           "0.9"
