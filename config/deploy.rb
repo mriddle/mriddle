@@ -15,7 +15,7 @@ set :branch, "master"
 set :rails_env, 'production'
 server "203.143.82.172", :app, :web, :db, :primary => true
 
-%w{ helpers chef}.each do |f|
+%w{ helpers unicorn chef}.each do |f|
   require File.expand_path("../deploy/#{f}", __FILE__)
 end
 
