@@ -1,2 +1,11 @@
-- @posts.each do |post|
-  = haml :post, layout => false, locals: { post: post }
+.page_container
+  .header
+    .header_content
+      %h1#page_title
+        mriddle.com
+      %p#slogan It's a feature not a bug!
+  .posts
+    - @posts.each do |post|
+      = haml :post, layout => false, locals: { post: post }
+
+.footer
