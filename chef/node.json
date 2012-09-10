@@ -2,7 +2,11 @@
   "rails_env": "production",
 
 
-  "run_list": [ "recipe[capistrano]" ],
+  "run_list": [ 
+  	"recipe[init]",
+  	"recipe[nginx]",
+  	"recipe[capistrano]"
+   ],
 
 
   "kernel": {
