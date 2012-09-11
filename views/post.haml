@@ -1,7 +1,6 @@
 .post
   .post_title
-    %h1
-      %a{href: post.permalink}= post.title
+    %h1= post.title
   .post_content
     = textile post.content
   .published
