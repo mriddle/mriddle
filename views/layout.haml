@@ -6,4 +6,23 @@
     %link{rel: 'stylesheet', href: '/stylesheet.css', type: 'text/css'}
   %body
     #content
-      = yield
+      #social_panel
+        .github
+          %a{:href => "https://github.com/mriddle", :target => "_blank"} Github
+        .twitter
+          %a{:href => "https://twitter.com/mriddle89", :target => "_blank"} Twitter
+        .linked_in
+          %a{:href => "http://www.linkedin.com/in/mriddle", :target => "_blank"} LinkedIn
+      .page_container
+        .header
+          .header_content
+            %h1#page_title
+              mriddle.com
+            %p#slogan It's a feature not a bug!
+            #logo
+            .about_section
+              %p
+                Hi there! My name is Matthew Riddle and this is my log of programming related solutions and tutorials that I have written or found on the net which have proven useful. It's kept primary for my own memory but is shared to help others.
+        .posts
+          = yield
+      .footer
