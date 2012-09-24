@@ -1,8 +1,8 @@
 <b>Quick reference and explanation of rake tasks</b>
 
---- Ruby
+<pre>
 #Clears all cached pages
-rake cache:clear 
+rake cache:clear
 #Loads a schema.rb file into the database and then loads the initial database fixtures.
 rake db:bootstrap
 #Copy default theme to site theme
@@ -13,10 +13,10 @@ rake db:migrate
 rake db:schema:dump
 #Load a schema.rb file into the database
 rake db:schema:load
-#Load initial database fixtures (in db/bootstrap/*.yml) into the current environment's database.  
+#Load initial database fixtures (in db/bootstrap/*.yml) into the current environment's database.
 #Load specific fixtures using FIXTURES=x,y
 rake db:bootstrap:load
-#Load fixtures into the current environment's database.  
+#Load fixtures into the current environment's database.
 #Load specific fixtures using FIXTURES=x,y
 rake db:fixtures:load
 #Clear the sessions table
@@ -57,7 +57,7 @@ rake doc:rerails
 rake edge
 #Truncates all *.log files in log/ to zero bytes
 rake log:clear
-#Lock to latest Edge Rails or a specific revision with REVISION=X (ex: REVISION=4021) or 
+#Lock to latest Edge Rails or a specific revision with REVISION=X (ex: REVISION=4021) or
 # a tag with TAG=Y (ex: TAG=rel_1-1-0)
 rake rails:freeze:edge
 #Lock this application to the current gems (by unpacking them into vendor/rails)
@@ -81,34 +81,34 @@ rake show_deploy_tasks
 #Report code statistics (KLOCs, etc) from the application
 rake stats
 #Test all units and functionals
-rake test                           
+rake test
 #Run tests for functionalsdb:test:prepare
-rake test:functionals                 
+rake test:functionals
 #Run tests for integrationdb:test:prepare
-rake test:integration              
+rake test:integration
 #Run tests for pluginsenvironment
-rake test:plugins                     
+rake test:plugins
 #Run tests for recentdb:test:prepare
-rake test:recent                    
+rake test:recent
 #Run tests for uncommitteddb:test:prepare
-rake test:uncommitted                 
+rake test:uncommitted
 #Run tests for unitsdb:test:prepare
-rake test:units                     
+rake test:units
 #Clears all files and directories in tmp/cache
-rake tmp:cache:clear                
+rake tmp:cache:clear
 #Clear session, cache, and socket files from tmp/
-rake tmp:clear                        
+rake tmp:clear
 #Creates tmp directories for sessions, cache, and sockets
-rake tmp:create                       
+rake tmp:create
 #Clears all files in tmp/pids
-rake tmp:pids:clear                   
+rake tmp:pids:clear
 #Clears all files in tmp/sessions
-rake tmp:sessions:clear               
+rake tmp:sessions:clear
 #Clears all files in tmp/sockets
-rake tmp:sockets:clear              
+rake tmp:sockets:clear
 #Copies the latest dialog.js to the application's public directory
-rake update_dialog_helper           
----
+rake update_dialog_helper
+</pre>
 
 -Matt
 

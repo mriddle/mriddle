@@ -3,34 +3,40 @@ I often clone my production data to play with during development. Even though my
 To get up and running with PG Backups do the following
 
 *Install*
---- Ruby
+
+<pre>
 $ heroku addons:add pgbackups
----
+</pre>
 
 *Backup*
---- Ruby
+
+<pre>
 $ heroku pgbackups:capture
----
+</pre>
 
 *View*
---- Ruby
+
+<pre>
 $ heroku pgbackups
----
+</pre>
 
 *Download*
---- Ruby
+
+<pre>
 $ heroku pgbackups:url b001
----
+</pre>
 
 *Restore*
---- Ruby
+
+<pre>
 $ pg_restore --verbose --clean --no-acl --no-owner -h myhost -U myuser -d mydb latest.dump
----
+</pre>
 
 *Delete* (If you wanted to)
---- Ruby
+
+<pre>
 $ heroku pgbackups:destroy b001
----
+</pre>
 
 If you don't have postgres as your back-end for development I suggest you do because it's awesome and Heroku use it as your production database anyway.
 

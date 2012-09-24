@@ -9,7 +9,7 @@ I tried to Google it but found no results, I didn't understand why it was occurr
 $ HEROKU_SSL_VERIFY=disable heroku create
 </code>
 
-This works for executing that single line only. Either run 
+This works for executing that single line only. Either run
 <code> $ export HEROKU_SSL_VERIFY=disable </code>
 to save you adding it before each command for that session or just add it to the bottom your bashrc file to not have to worry about it again.
 <code> $ vim ~/.bashrc # Add export HEROKU_SSL_VERIFY=disable to the bottom of the file </code>
