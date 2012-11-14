@@ -1,0 +1,17 @@
+G'day guys,
+
+We have just recently upgraded one of our projects to Ruby 1.9.3 from ree 1.8.7 and had a character encoding issue with a bullet point '•' in our SASS. 
+
+By adding the following to our code the problem was resolved :)
+
+<pre>
+	#environment.rb
+  Encoding.default_internal = Encoding::UTF_8
+  Encoding.default_external = Encoding::UTF_8
+	
+	#my_sass_file.sass
+	@charset "UTF-8"
+
+</pre>
+
+-Matt
