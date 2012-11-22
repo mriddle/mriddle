@@ -1,7 +1,7 @@
 source :rubygems
 gem 'sinatra'
 gem 'haml'
-gem 'RedCloth'
+gem 'github-markdown'
 gem 'sass'
 gem 'capistrano'
 gem 'unicorn'

@@ -3,7 +3,7 @@
     %h1
       %a{href: post.permalink}= post.title
   .post_content
-    = textile post.content
+    = GitHub::Markdown.render(post.content) 
   .published
     %span.date= post.date.strftime("%e %b, %Y")
 
