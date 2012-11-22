@@ -6,11 +6,11 @@ I was ssh'ing into it as ubuntu and then swapping the user `sudo su jenkins-node
 
 I kept getting the following error
 
-<pre>X11 connection rejected because of wrong authentication.</pre>
+`X11 connection rejected because of wrong authentication.`
 
 This was fixed by running the following
 
-<pre>
+```
 #As ubuntu user
 xauth list|grep `uname -n`
 #Copy the hex key
@@ -18,7 +18,7 @@ xauth list|grep `uname -n`
 sudo su jenkins-node
 DISPLAY=:0; export DISPLAY
 xauth add $DISPLAY . hexkey
-</pre>
+```
 
 I was then able to run X as jenkins-node :)
 

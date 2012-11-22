@@ -1,29 +1,21 @@
 Below are some commands you might find useful in determining Keystore issues.
 
-*Deleting a certificate*
+**Deleting a certificate**
 
-<pre>
-sudo keytool -delete -keystore /usr/lib/jvm/java-6-sun-1.6.0.06/jre/lib/security/jssecacerts
- -alias aliasname
-</pre>
+	sudo keytool -delete -keystore /usr/lib/jvm/java-6-sun-1.6.0.06/jre/lib/security/jssecacerts
+ 	 -alias aliasname
 
-*List all of the keystore certificates*
+**List all of the keystore certificates**
 
-<pre>
-keytool -list -v -keystore keystorelocation | more
-</pre>
+	keytool -list -v -keystore keystorelocation | more
 
-*List all cacerts certificates*
+**List all cacerts certificates**
 
-<pre>
-keytool -list -keystore /etc/java-6-sun/security/cacerts | more
-</pre>
+	keytool -list -keystore /etc/java-6-sun/security/cacerts | more
 
-*List or display a certificate*
+**List or display a certificate**
 
-<pre>
-keytool -printcert -v -file anycert.cer | more
-</pre>
+	keytool -printcert -v -file anycert.cer | more
 
 Hope they come in handy
 

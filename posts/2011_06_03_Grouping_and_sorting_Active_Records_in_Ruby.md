@@ -14,12 +14,15 @@ I have made a few changes to my blog recently, one of them being a list of posts
 </pre>
 
 The expected output will be
+
 <b>2011 January</b>
+
 * post title one
 * post title two
 
 
 <b>2011 February</b>
+
 * post title one
 
 
@@ -39,6 +42,6 @@ If you want to sort by date as well simply change the code above to this
 <% end %>
 </pre>
 
-More information can be found "here":http://ruby-doc.org/core/classes/Enumerable.html#M001497 and "here":http://api.rubyonrails.org/classes/ActiveRecord/QueryMethods.html#method-i-group
+More information can be found [here](http://ruby-doc.org/core/classes/Enumerable.html#M001497) and [here](http://api.rubyonrails.org/classes/ActiveRecord/QueryMethods.html#method-i-group)
 
 -Matt

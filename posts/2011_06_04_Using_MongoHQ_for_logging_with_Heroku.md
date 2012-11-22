@@ -1,30 +1,27 @@
 Free logging on Heroku is limited, with <i>basic</i> giving you 500 lines of history and <i>expanded</i> giving you the ability to tail. If you want to keep anymore then you have to upgrade for $10 a month, which aint bad if your running something that generates money.
 
-For my blog however I wanted to keep the last week or so of logs and not pay anything so I setup logging with "MongoHQ":https://mongohq.com/ and a gem called "central_logger":https://github.com/customink/central_logger. MongoHQ offer a free shared DB of 16MB which is more than enough for me. Central Logger is a centralized logging gem for rails apps with MongoDB which includes support for Rails 3 and 2.
+For my blog however I wanted to keep the last week or so of logs and not pay anything so I setup logging with [MongoHQ](https://mongohq.com/) and a gem called [central_logger](https://github.com/customink/central_logger). MongoHQ offer a free shared DB of 16MB which is more than enough for me. Central Logger is a centralized logging gem for rails apps with MongoDB which includes support for Rails 3 and 2.
 
-*Setting it up*
-* Create an account on MongoHQ "here":https://mongohq.com/signup
-* Install the gem. Add the following to your Gemfile and run <code>bundle install</code> or run <code>gem install central_logger</code>
+**Setting it up**
 
-<pre>
-#Gemfile
- gem "central_logger"
-</pre>
+- Create an account on MongoHQ "here":https://mongohq.com/signup
+- Install the gem. Add the following to your Gemfile and run <code>bundle install</code> or run <code>gem install central_logger</code>
 
-<pre>
-#applicatication_controller.rb
- include CentralLogger::Filter
-</pre>
+```
+  #Gemfile
+    gem "central_logger"
 
-* If using Rails 3 SKIP this step, otherwise add the following to <i>config/environment.rb</i>
+  #applicatication_controller.rb
+    include CentralLogger::Filter
+```
 
-<pre>
-require 'central_logger' CentralLogger::Initializer.initialize_deprecated_logger(config)
-</pre>
+- If using Rails 3 SKIP this step, otherwise add the following to **config/environment.rb**
 
-* Add mongo settings to database.yml for each environment in which you want to use the Central Logger. The central logger will also look for a separate central_logger.yml or mongoid.yml (if you are using mongoid) before looking in database.yml. In the central_logger.yml and mongoid.yml case, the settings should be defined without the 'mongo' subkey.
+`require 'central_logger' CentralLogger::Initializer.initialize_deprecated_logger(config)`
 
-<pre>
+-  Add mongo settings to database.yml for each environment in which you want to use the Central Logger. The central logger will also look for a separate central_logger.yml or mongoid.yml (if you are using mongoid) before looking in database.yml. In the central_logger.yml and mongoid.yml case, the settings should be defined without the 'mongo' subkey.
+
+```
 #database.yml
 development:
   adapter: mysql
@@ -50,11 +47,11 @@ development:
     username: myusername
      # MongoHQ DB password
     password: mypass
-</pre>
+```
 
-*OR*
+**OR**
 
-<pre>
+```
 #central_logger.yml
 development:
     database: my_app
@@ -70,13 +67,13 @@ development:
 
 #production:
 #......
-</pre>
+```
 
 Remember that people may have access to this file, so storing the DB password in here is not the best idea.
 
-*That's it*, restart the server and you're good to go. Once the page hits start coming in you will see a new collection developer_log (or w/e you set it up for) with documents being created per request. The log format will look like this
+**That's it**, restart the server and you're good to go. Once the page hits start coming in you will see a new collection developer_log (or w/e you set it up for) with documents being created per request. The log format will look like this
 
-<pre>
+```
 {
    'action'           : action_name,
    'application_name' : application_name (rails root),
@@ -95,16 +92,16 @@ Remember that people may have access to this file, so storing the DB password in
    'runtime'          : elapsed_execution_time_in_milliseconds,
    'url'              : full_url
 }
-</pre>
+```
 
 If you want to add extra information to the base of the document (let's say something like user_guid on every request that it's available), you can just call the Rails.logger.add_metadata method on your logger like so (for example from a before_filter):
 
-<pre>
+```
 # make sure we're using the CentralLogger in this environment
 if Rails.logger.respond_to?(:add_metadata)
     Rails.logger.add_metadata(:user_guid => @user_guid)
 end
-</pre>
+```
 
 
 -Matt

@@ -1,4 +1,4 @@
-Marcus Kazmierczak came up with a list of 10 one-liner examples that are meant to showcase "Scala’s expressiveness":http://solog.co/47/10-scala-one-liners-to-impress-your-friends/ . A "CoffeeScript version":http://ricardo.cc/2011/06/02/10-CoffeeScript-One-Liners-to-Impress-Your-Friends.html quickly emerged, and now a "Ruby one":http://programmingzen.com/2011/06/02/10-ruby-one-liners-to-impress-your-friends/
+Marcus Kazmierczak came up with a list of 10 one-liner examples that are meant to showcase [Scala’s expressiveness](http://solog.co/47/10-scala-one-liners-to-impress-your-friends/) . A [CoffeeScript version]http://ricardo.cc/2011/06/02/10-CoffeeScript-One-Liners-to-Impress-Your-Friends.html) quickly emerged, and now a [Ruby one](http://programmingzen.com/2011/06/02/10-ruby-one-liners-to-impress-your-friends/)
 
 <b>Multiply each item in a list by 2</b>
 
@@ -100,6 +100,6 @@ while primes[index]**2 <= primes.last
 end
 </pre>
 
-This last example is straight from "StackOverflow":http://stackoverflow.com/questions/241691/sieve-of-eratosthenes-in-ruby . Not the prettiest code ever, but you get the idea.
+This last example is straight from [StackOverflow](http://stackoverflow.com/questions/241691/sieve-of-eratosthenes-in-ruby) . Not the prettiest code ever, but you get the idea.
 
 -Matt

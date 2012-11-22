@@ -1,10 +1,8 @@
 I tried to use chkconfig today and found it wasn't included with my vanilla Ubuntu install. To install it simply run the following command
 
-<pre>
-$ sudo apt-get install chkconfig
-</pre>
+	$ sudo apt-get install chkconfig
 
-OR you can download it from "here":http://ubuntu2.cica.es/ubuntu/ubuntu/pool/universe/c/chkconfig/
+OR you can download it from [here](http://ubuntu2.cica.es/ubuntu/ubuntu/pool/universe/c/chkconfig/)
 
 An explanation of chkconfig
 

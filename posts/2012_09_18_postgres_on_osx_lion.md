@@ -4,12 +4,12 @@ To get around this update your path and install postgres as shown below:
 
 Installing PostgreSQL (9.2) 
 
-<pre>
+```
 echo 'export PATH="/usr/bin/local:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 brew install postgres
 echo "Life complete"
-</pre>
+```
 
 -Matt
 

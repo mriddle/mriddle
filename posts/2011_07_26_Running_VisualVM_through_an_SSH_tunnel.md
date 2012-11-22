@@ -4,35 +4,26 @@ To connect to your app via an SSH tunnel on Linux simply do the following. In th
 
 Connect to your remote machine where your Java Application is running
 
-<pre>
-$ sudo ssh -D 9696 your.ip.goes.here -i .ssh/yourkeyfileifyougotone.pem
-</pre>
+	$ sudo ssh -D 9696 your.ip.goes.here -i .ssh/yourkeyfileifyougotone.pem
 
-As in the previous example make sure you create a file called <b>jstatd.all.policy</b> in <i>$JAVA_HOME/bin</i> with the following contents:
+As in the previous example make sure you create a file called **jstatd.all.policy** in *$JAVA_HOME/bin* with the following contents:
 
-<pre>
-grant codebase "file:${java.home}/../lib/tools.jar" { permission java.security.AllPermission;};
-</pre>
+	grant codebase "file:${java.home}/../lib/tools.jar" { permission java.security.AllPermission;};
 
 Run jstatd using the following command (within the server terminal)
 
-<pre>
-$ sudo jstatd -p 1099 -J-Djava.security.policy=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0/
- bin/jstatd.all.policy &
-</pre>
+	$ sudo jstatd -p 1099 -J-Djava.security.policy=/usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0/
+ 	 bin/jstatd.all.policy &
 
 Then simply run VisualVM from your desktop running the following command
-*Linux*
 
-<pre>
-$ jvisualvm -J-Dnetbeans.system_socks_proxy=localhost:9696 -J-Djava.net.useSystemProxies=true
-</pre>
+**Linux**
 
-*Windows*
+	$ jvisualvm -J-Dnetbeans.system_socks_proxy=localhost:9696 -J-Djava.net.useSystemProxies=true
 
-<pre>
-visualvm.exe -J-Dnetbeans.system_socks_proxy=localhost:9696 -J-Djava.net.useSystemProxies=true
-</pre>
+**Windows**
+
+	visualvm.exe -J-Dnetbeans.system_socks_proxy=localhost:9696 -J-Djava.net.useSystemProxies=true
 
 That's it!
 
