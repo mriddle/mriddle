@@ -4,6 +4,14 @@
       %a{href: post.permalink}= post.title
   .post_content
     = GitHub::Markdown.render(post.content) 
-  .published
-    %span.date= post.date.strftime("%e %b, %Y")
+  .post_details
+    .published
+      %span.date= post.date.strftime("%e %b, %Y")
+    - if post.modified
+      .modified
+        %span.modified_by= post.modified_by
+        %span.modified_on= post.modified_on.strftime("%e %b, %Y")
+    
+
+
 

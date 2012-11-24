@@ -136,22 +136,35 @@ html, body, #content
       padding-left: 10px
       word-break: break-all
 
-  .published
+  .post_details
     font-weight: bold
     font-size: 12px
     font-family: fantasy
     font-style: italic
     color: #666
-    float: right
-    padding-left: 50px
-    padding-right: 5px
     border-bottom: 1px solid #CCC
+    height: 18px
+    padding-top: 25px
 
+  .published, .modified
+    padding-right: 5px
+
+    .date, .modified_by, .modified_on
+      opacity: 0.5
+
+  .published
+    padding-left: 50px
+    float: right
     &:before
       content: "Published "
 
-    .date
-      opacity: 0.5
+  .modified
+    padding-left: 12px
+    float: left
+    &:before
+      content: "Modified By "
+    @media screen and (max-width: 480px)
+      display: none
 
 pre, code
   line-height: 20px
