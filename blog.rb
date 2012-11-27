@@ -38,12 +38,12 @@ class Post
     post.title = file_hash.join(' ').capitalize
     post.content = File.open(file_path).read
 
-    post = check_for_modifications(post, file_path)
+    post = check_for_modification_metadata(post, file_path)
   end
 
   private
 
-  def self.check_for_modifications(post, file_path)
+  def self.check_for_modification_metadata(post, file_path)
     authors = `git log "#{file_path}" | grep "Author"`.split("\n")
     dates = `git log "#{file_path}" | grep "Date"`.split("\n")
     post.modified = false
