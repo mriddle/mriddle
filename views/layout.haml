@@ -7,12 +7,15 @@
   %body
     #content
       #social_panel
-        .github
-          %a{:href => "https://github.com/#{@site.github}", :target => "_blank"} Github
-        .twitter
-          %a{:href => "https://twitter.com/#{@site.twitter}", :target => "_blank"} Twitter
-        .linked_in
-          %a{:href => "http://www.linkedin.com/in/#{@site.linked_in}", :target => "_blank"} LinkedIn
+        - if @site.github
+          .github
+            %a{:href => "https://github.com/#{@site.github}", :target => "_blank"} Github
+        - if @site.twitter
+          .twitter
+            %a{:href => "https://twitter.com/#{@site.twitter}", :target => "_blank"} Twitter
+        - if @site.linked_in
+          .linked_in
+            %a{:href => "http://www.linkedin.com/in/#{@site.linked_in}", :target => "_blank"} LinkedIn
       .page_container
         .header
           .header_content
