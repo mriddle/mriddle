@@ -4,5 +4,8 @@
 	"site_about"   : "Hi there! My name is Matthew Riddle and this is my log of programming related solutions and tutorials that I have written or found on the net which have proven useful. It's kept primary for my own memory but is shared to help others.",
 	"linked_in"    : "mriddle",
 	"github"       : "mriddle",
-	"twitter"      : "mriddle89"
+	"twitter"      : "mriddle89",
+  "rss_title"    : "mriddle.com RSS feed",
+  "rss_author"   : "mriddle",
+  "rss_about"    : "Feeding hungry devs"
 }
