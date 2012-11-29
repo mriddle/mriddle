@@ -1,5 +1,5 @@
 name "blog_runlist"
-description 'mriddle blog stack'
+description 'blog stack'
 run_list(
   "recipe[nginx]",
   "recipe[capistrano]",

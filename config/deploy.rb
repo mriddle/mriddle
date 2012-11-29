@@ -1,10 +1,13 @@
 require "bundler/capistrano"
+require 'lib/site'
+
+site = Site.new
 
 ssh_options[:forward_agent] = true
 default_run_options[:pty] = true
 
-set :application, "blog"
-set :repository,  "git@github.com:mriddle/blog.git"
+set :application, "#{site.app_name}"
+set :repository,  "#{site.app_repo}"
 set :scm, :git
 set :user, "admin"
 
@@ -13,7 +16,7 @@ set :deploy_via, :remote_cache
 set :branch, "master"
 
 set :rails_env, 'production'
-server "203.143.82.172", :app, :web, :db, :primary => true
+server "#{site.app_server}", :app, :web, :db, :primary => true
 
 %w{ helpers unicorn chef}.each do |f|
   require File.expand_path("../deploy/#{f}", __FILE__)
