@@ -18,12 +18,13 @@
             %a{:href => "http://www.linkedin.com/in/#{@site.linked_in}", :target => "_blank"} LinkedIn
       .page_container
         .header
-          .header_content
-            %h1#page_title= @site.title
-            %p#slogan= @site.slogan
-            #logo
-            .about_section
-              %p= @site.about
+          %a{:id => "home_link", :href => "/"}
+            .header_content
+              %h1#page_title= @site.title
+              %p#slogan= @site.slogan
+              #logo
+              .about_section
+                %p= @site.about
         .posts
           = yield
       .footer
