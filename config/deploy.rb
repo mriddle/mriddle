@@ -1,5 +1,5 @@
 require "bundler/capistrano"
-require 'lib/site'
+require './lib/site'
 
 site = Site.new
 
