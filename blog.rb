@@ -30,4 +30,20 @@ class Blog < Sinatra::Base
   get '/' do
     haml :index
   end
+
+  post '/' do
+    remote_ip = request.env["HTTP_X_FORWARDED_FOR"]
+    puts "Remote IP #{remote_ip}"
+    trusted_github_ips = ["207.97.227.253", "50.57.128.197", "108.171.174.178"]
+    if trusted_github_ips.include? remote_ip
+      puts "Push received from trusted source."
+      post_pushed = JSON.parse(params[:payload])['commits'].select { |c| c['message'].downcase.include? 'post' }.any?
+      if post_pushed
+        puts "A post has recently been pushed. Updating!"
+        puts `git pull --rebase origin master`
+        puts `bundle exec cap deploy`
+      end
+    end
+  end
+
 end
