@@ -1,10 +1,7 @@
-mriddle.com
-====
+Fork and enjoy!
 
-Going to rebuild my blog from the ground up to teach myself some cool shit :D
+ - Update site_config.json
+ - Add your logo and update styling if you want
+ - Add your posts under the post dir
+ - `bundle install && rackup`
 
-It's designed to be my playground. I expect to spend more time writing code than actually blogging.
-
-Fork me if you like. Run with ```bundle install && rackup```
-
-Enjoy :)
