@@ -2,6 +2,6 @@
 .DS_Store
 .bundle/*
 tmp/*
-log/*
+log
 REVISION
 public/system
