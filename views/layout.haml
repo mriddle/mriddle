@@ -1,30 +1,30 @@
 !!!
 %html
   %head
-    %title= @site.title
+    %title= @site_config["title"]
     %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
     %link{rel: 'stylesheet', href: '/stylesheet.css', type: 'text/css'}
   %body
     #content
       #social_panel
-        - if @site.github
+        - if @site_config['github']
           .github
-            %a{:href => "https://github.com/#{@site.github}", :target => "_blank"} Github
-        - if @site.twitter
+            %a{:href => "https://github.com/#{@site_config['github']}", :target => "_blank"} Github
+        - if @site_config['twitter']
           .twitter
-            %a{:href => "https://twitter.com/#{@site.twitter}", :target => "_blank"} Twitter
-        - if @site.linked_in
+            %a{:href => "https://twitter.com/#{@site_config['twitter']}", :target => "_blank"} Twitter
+        - if @site_config['linked_in']
           .linked_in
-            %a{:href => "http://www.linkedin.com/in/#{@site.linked_in}", :target => "_blank"} LinkedIn
+            %a{:href => "http://www.linkedin.com/in/#{@site_config['linked_in']}", :target => "_blank"} LinkedIn
       .page_container
         .header
           %a{:id => "home_link", :href => "/"}
             .header_content
-              %h1#page_title= @site.title
-              %p#slogan= @site.slogan
+              %h1#page_title= @site_config['title']
+              %p#slogan= @site_config['slogan']
               #logo
               .about_section
-                %p= @site.about
+                %p= @site_config['about']
         .posts
           = yield
       .footer

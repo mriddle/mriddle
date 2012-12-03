@@ -3,10 +3,11 @@ require_relative 'lib/site'
 require_relative 'lib/rss_builder'
 
 class Blog < Sinatra::Base
- 
+
+  set :site_config, Site.new.config
+  set :posts, Post.all
+  
   before do
-    @site = Site.new
-    @posts = Post.all
     @rss_builder = RSSBuilder.new
   end
 
@@ -23,11 +24,13 @@ class Blog < Sinatra::Base
 
   get '/rss' do
     content_type 'text/xml'
-    feed = @rss_builder.build_feed(@site, @posts)
+    feed = @rss_builder.build_feed(settings.site_config, settings.posts)
     "#{feed}"
   end
 
   get '/' do
+    @site_config = settings.site_config
+    @posts = settings.posts
     haml :index
   end
 
