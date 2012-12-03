@@ -15,6 +15,7 @@ class Blog < Sinatra::Base
   get '/:year/:month/:day/:post' do
     filename = params.values_at("year", "month", "day", "post").join('_') + '.md'
     @post = settings.post_service.find_by_filename( filename )
+    pass unless @post
     haml :show_post
   end
 
@@ -47,6 +48,22 @@ class Blog < Sinatra::Base
         puts `bundle exec cap deploy`
       end
     end
+  end
+
+  get '/404' do
+    haml :'404'
+  end
+
+  get '/500' do
+    haml :'500'
+  end
+
+  not_found do
+    haml :'404'
+  end
+
+  error do
+    haml :'500'
   end
 
 end
