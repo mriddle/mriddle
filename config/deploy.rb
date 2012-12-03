@@ -1,3 +1,4 @@
+require 'new_relic/recipes'
 require "bundler/capistrano"
 require './lib/site'
 
@@ -21,5 +22,7 @@ server site_config['app_server'], :app, :web, :db, :primary => true
 %w{ helpers unicorn chef}.each do |f|
   require File.expand_path("../deploy/#{f}", __FILE__)
 end
+
+after "deploy:update", "newrelic:notice_deployment"
 
 before('deploy:finalize_update', :chef)
