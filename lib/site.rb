@@ -4,7 +4,6 @@ class Site
   attr_reader :config
 
   def initialize
-    puts "Created a new site!"
     @config = read_config
   end
 

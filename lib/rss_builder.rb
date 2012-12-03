@@ -1,6 +1,14 @@
 class RSSBuilder
   require "rss"
-  
+
+  attr_reader :feed
+
+  def initialize(site, posts)
+    @feed = build_feed(site, posts)
+  end
+
+  private
+
   def build_feed(site, posts)
     RSS::Maker.make("atom") do |maker|
       maker.channel.author = site["rss_author"]

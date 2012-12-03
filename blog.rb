@@ -6,10 +6,7 @@ class Blog < Sinatra::Base
 
   set :site_config, Site.new.config
   set :posts, Post.all
-  
-  before do
-    @rss_builder = RSSBuilder.new
-  end
+  set :rss_feed, RSSBuilder.new(settings.site_config, settings.posts).feed
 
   get '/:year/:month/:day/:post' do
     filename = params.values_at("year", "month", "day", "post").join('_') + '.md'
@@ -24,8 +21,7 @@ class Blog < Sinatra::Base
 
   get '/rss' do
     content_type 'text/xml'
-    feed = @rss_builder.build_feed(settings.site_config, settings.posts)
-    "#{feed}"
+    "#{settings.rss_feed}"
   end
 
   get '/' do
