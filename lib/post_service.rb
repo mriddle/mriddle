@@ -1,13 +1,27 @@
-class Post
-  def self.all
+class PostService
+
+  attr_reader :posts
+
+  def initialize
+    @posts = get_posts
+  end
+
+  def find_by_filename( filename )
+    posts = @posts.select { |p| p.path == "posts/#{filename}"}
+    return posts.first if posts.any?
+  end
+
+  private
+
+  def get_posts
     posts = []
     Dir.glob('posts/*.md') do |f|
-      posts << find_by_filename( f.split('/').last )
+      posts << get_post( f.split('/').last )
     end
     posts.sort_by(&:date).reverse
   end
 
-  def self.find_by_filename( filename )
+  def get_post(filename)
     file_hash = filename.gsub('.md', '').split('_')
     post = OpenStruct.new
     year = file_hash.shift
@@ -19,13 +33,12 @@ class Post
     post.permalink = "/" + [ year, month, day, URI.escape(file_hash.join('_'))].join('/')
     post.title = file_hash.join(' ').capitalize
     post.content = File.open(file_path).read
+    post.path = file_path
 
     post = check_for_modification_metadata(post, file_path)
   end
 
-  private
-
-  def self.check_for_modification_metadata(post, file_path)
+  def check_for_modification_metadata(post, file_path)
     authors = `git log "#{file_path}" | grep "Author"`.split("\n")
     dates = `git log "#{file_path}" | grep "Date"`.split("\n")
     post.modified = false

@@ -1,16 +1,20 @@
-require_relative 'lib/post'
+require_relative 'lib/post_service'
 require_relative 'lib/site'
 require_relative 'lib/rss_builder'
 
 class Blog < Sinatra::Base
 
   set :site_config, Site.new.config
-  set :posts, Post.all
-  set :rss, RSSBuilder.new(settings.site_config, settings.posts)
+  set :post_service, PostService.new
+  set :rss, RSSBuilder.new(settings.site_config, settings.post_service.posts)
+
+  before do
+    @site_config = settings.site_config
+  end
 
   get '/:year/:month/:day/:post' do
     filename = params.values_at("year", "month", "day", "post").join('_') + '.md'
-    @post = Post.find_by_filename( filename )
+    @post = settings.post_service.find_by_filename( filename )
     haml :show_post
   end
 
@@ -26,8 +30,7 @@ class Blog < Sinatra::Base
   end
 
   get '/' do
-    @site_config = settings.site_config
-    @posts = settings.posts
+    @posts = settings.post_service.posts
     haml :index
   end
 
