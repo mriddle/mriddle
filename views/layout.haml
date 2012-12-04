@@ -1,6 +1,7 @@
 !!!
 %html
   %head
+    = NewRelic::Agent.browser_timing_header rescue ""
     %title= @site_config["title"]
     %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
     %link{rel: 'stylesheet', href: '/stylesheet.css', type: 'text/css'}
@@ -28,3 +29,4 @@
         .posts
           = yield
       .footer
+  = NewRelic::Agent.browser_timing_footer rescue ""
