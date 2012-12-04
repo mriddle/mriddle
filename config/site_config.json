@@ -1,14 +1,14 @@
 {
-	"title"       : "mriddle.com",
-	"slogan"      : "It's a feature not a bug!",
-	"about"       : "Hi there! My name is Matthew Riddle and this is my log of programming related solutions and tutorials that I have written or found on the net which have proven useful. It's kept primary for my own memory but is shared to help others.",
-	"linked_in"   : "mriddle",
-	"github"      : "mriddle",
-	"twitter"     : "mriddle89",
-  "rss_title"   : "mriddle.com RSS feed",
-  "rss_author"  : "mriddle",
+	"title"       : "LP Tech",
+	"slogan"      : "Just as excited about tech as we are travel!",
+	"about"       : "Keeping you up to date with the latest innovations and news from the world of Lonely Planet Labs.",
+	"linked_in"   : "company/lonely-planet",
+	"github"      : "lonelyplanet",
+	"twitter"     : "lonelyplanet",
+  "rss_title"   : "Lonely Planet Tech RSS feed",
+  "rss_author"  : "LP developers",
   "rss_about"   : "Feeding hungry devs",
-  "app_name"    : "blog",
-  "app_repo"    : "git@github.com:mriddle/blog.git",
-  "app_server"  : "203.143.82.172"
+  "app_name"    : "spp_blog",
+  "app_repo"    : "git@github.com:lonelyplanet/spp_blog.git",
+  "app_server"  : "10.63.1.192"
 }
