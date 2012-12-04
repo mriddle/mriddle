@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sass'
 require 'bundler'
+require 'newrelic_rpm'
 
 Bundler.require
 
