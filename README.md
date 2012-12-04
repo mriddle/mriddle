@@ -7,6 +7,7 @@ Spin up server
 Blog
 ==
  - Update site_config.json
+ - Update new relic config
  - Add your logo and update styling if you want
  - Add your posts under the post dir
  - `bundle install && rackup`

@@ -10,5 +10,6 @@
   "rss_about"   : "Feeding hungry devs",
   "app_name"    : "spp_blog",
   "app_repo"    : "git@github.com:lonelyplanet/spp_blog.git",
-  "app_server"  : "10.63.1.192"
+  "app_server"  : "10.63.1.192",
+  "deploy_user" : "ubuntu"
 }
