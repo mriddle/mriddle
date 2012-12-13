@@ -31,7 +31,7 @@ class PostService
 
     post.date = Date.civil(year.to_i, month.to_i, day.to_i)
     post.permalink = "/" + [ year, month, day, URI.escape(file_hash.join('_'))].join('/')
-    post.title = file_hash.join(' ').capitalize
+    post.title = file_hash.join(' ')
     post.content = File.open(file_path).read
     post.path = file_path
 
