@@ -1,14 +1,14 @@
 Upgradinate
 ===
 
-It's a process we have used a few times at Lonely Planet now that's saved us a lot of time and greif.
+Upgradinating is a process we have used a few times at Lonely Planet now that's saved us a lot of time and grief.
 
-We have recently completed a few technical milestones that have been haunting us for some time.
+We have recently completed a few technical milestones that have been haunting us for some time:
 
 - Upgrading from Rails 2.3.x to Rails 3.2.x
 - Upgrading from Ruby 1.8.7 (REE) to Ruby 1.9.3
 
-Having issues in the past with large chunks of work and branches we wanted a way we could keep shipping code without interferring or slowing down our releases. We came up with the idea of forward-porting what we could and scripting up all other changes.
+Having issues in the past with large chunks of work and a strong desire not to branch, we wanted a way we could keep shipping code without interrupting or slowing down our releases. We came up with the idea of forward-porting what we could and scripting up all other changes - and we called it upgradinating.
 
 Enough talk, time for the code!
 
@@ -52,7 +52,7 @@ Enough talk, time for the code!
 
 **Why this works**
 
- - You don't distrupt the rest of the teams development of features and what-not
+ - You don't disrupt the rest of the team's development work
  - Easy to test your changes, can setup a CI build on old and new versions
  - You're changes are visible to the rest of the team, less conflicts
  - Ability to push your changes quickly
