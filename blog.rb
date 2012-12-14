@@ -1,12 +1,35 @@
-require_relative 'lib/post_service'
-require_relative 'lib/site'
-require_relative 'lib/rss_builder'
+require 'sinatra'
+require 'sprockets'
+
+Dir.glob('lib/*.rb').each {|name| require_relative name.gsub('.rb', '') }
 
 class Blog < Sinatra::Base
+  set :root, File.expand_path('../', __FILE__)
+  set :sprockets, Sprockets::Environment.new(root)
+  set :precompile, [ /\w+\.(?!js|css).+/, /(application).(css|js)$/ ]
+  set :assets_prefix, 'assets'
+  set :assets_path, File.join(root, 'public', assets_prefix)
+  set :views, Proc.new { File.join(root, "app/views") }
 
   set :site_config, Site.new.config
   set :post_service, PostService.new
   set :rss, RSSBuilder.new(settings.site_config, settings.post_service.posts)
+
+  configure do
+    ["assets", "vendor"].each do |path|
+      ["stylesheets", "javascripts", "images"].each do |asset_folder|
+        sprockets.append_path(File.join(root, path, asset_folder))
+      end
+    end
+
+    sprockets.context_class.instance_eval do
+      include AssetHelpers
+    end
+  end
+
+  helpers do
+    include AssetHelpers
+  end
 
   before do
     @site_config = settings.site_config
@@ -17,11 +40,6 @@ class Blog < Sinatra::Base
     @post = settings.post_service.find_by_filename( filename )
     pass unless @post
     haml :show_post
-  end
-
-  get '/stylesheet.css' do
-    content_type 'text/css', charset: 'utf-8'
-    sass :stylesheet, :style => :compact
   end
 
   get '/rss' do
@@ -55,14 +73,6 @@ class Blog < Sinatra::Base
   end
 
   get '/500' do
-    haml :'500'
-  end
-
-  not_found do
-    haml :'404'
-  end
-
-  error do
     haml :'500'
   end
 
