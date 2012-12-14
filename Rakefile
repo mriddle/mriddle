@@ -6,13 +6,21 @@ namespace :assets do
   task :compile do
     ['application', 'vendor'].each do |asset|
       ['js', 'css'].each do |type|
-        write_asset(asset, type)
+        file_name = "#{asset}.#{type}"
+        write_asset(file_name)
       end
+    end
+    compile_images
+  end
+
+  def compile_images
+    Dir.glob('assets/images/*').each do |file_name|
+      write_asset(File.basename(file_name))
     end
   end
 
-  def write_asset(name, type)
-    file_name   = "#{name}.#{type}"
+  def write_asset(file_name)
+
     sprockets   = Blog.settings.sprockets
     asset       = sprockets[file_name]
     outpath     = File.join(Blog.settings.assets_path)
