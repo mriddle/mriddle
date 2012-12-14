@@ -4,29 +4,39 @@
     = NewRelic::Agent.browser_timing_header rescue ""
     %title= @site_config["title"]
     %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
+    %link{rel: 'stylesheet', href: asset_path('vendor.css'), type: 'text/css'}
     %link{rel: 'stylesheet', href: asset_path('application.css'), type: 'text/css'}
   %body
     #content
-      #social_panel
-        - if @site_config['github']
-          .github
-            %a{:href => "https://github.com/#{@site_config['github']}", :target => "_blank"} Github
-        - if @site_config['twitter']
-          .twitter
-            %a{:href => "https://twitter.com/#{@site_config['twitter']}", :target => "_blank"} Twitter
-        - if @site_config['linked_in']
-          .linked_in
-            %a{:href => "http://www.linkedin.com/#{@site_config['linked_in']}", :target => "_blank"} LinkedIn
-      .page_container
-        .header
-          %a{:id => "home_link", :href => "/"}
-            .header_content
-              %h1#page_title= @site_config['title']
-              %p#slogan= @site_config['slogan']
-              #logo
-              .about_section
-                %p= @site_config['about']
-        .posts
-          = yield
-      .footer
+      .container-fluid
+        .row-fluid
+          .span3
+            .well.sidebar-nav
+              .header_content
+                %h1#page_title= @site_config['title']
+                %p#slogan= @site_config['slogan']
+                #logo
+                .about_section
+                  %p= @site_config['about']
+              %ul.nav.nav-list
+                %li.active
+                  %a{:id => "home_link", :href => "/"} Home
+                %li.nav-header
+                  Social
+                - if @site_config['github']
+                  %li.github
+                    %a{:href => "https://github.com/#{@site_config['github']}", :target => "_blank"} Github
+                - if @site_config['twitter']
+                  %li.twitter
+                    %a{:href => "https://twitter.com/#{@site_config['twitter']}", :target => "_blank"} Twitter
+                - if @site_config['linked_in']
+                  %li.linked_in
+                    %a{:href => "http://www.linkedin.com/#{@site_config['linked_in']}", :target => "_blank"} LinkedIn
+                %li.nav-header
+                  Hacks
+                %li
+                  %span.disabled_link Comming Soon
+          .span9
+            = yield
+
   = NewRelic::Agent.browser_timing_footer rescue ""

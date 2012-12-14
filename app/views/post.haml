@@ -1,17 +1,21 @@
 .post
-  .post_title
-    %h1
-      %a{href: post.permalink}= post.title
-  .post_content
-    = GitHub::Markdown.render(post.content) 
-  .post_details
-    .published
-      %span.date= post.date.strftime("%e %b, %Y")
-    - if post.modified
-      .modified
-        %span.modified_by= post.modified_by
-        %span.modified_on= post.modified_on.strftime("%e %b, %Y")
-    
-
-
-
+  .row-fluid
+    .span12.well
+      .span9
+        .post_title
+          %h1
+            %a{href: post.permalink}= post.title
+        .post_content
+          = GitHub::Markdown.render(post.content)
+      .span3
+        .post_details
+          .published
+            .published_header Published
+            .published_det
+              %span.date= post.date.strftime("%e %b, %Y")
+          - if post.modified
+            .modified
+              .published_header Modified
+              .published_det
+                %span.modified_by= post.modified_by
+                %span.modified_on= post.modified_on.strftime("%e %b, %Y")
