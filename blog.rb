@@ -1,9 +1,14 @@
-require 'sinatra'
+require 'sinatra/base'
+require "sinatra/config_file"
 require 'sprockets'
 
 Dir.glob('lib/*.rb').each {|name| require_relative name.gsub('.rb', '') }
 
 class Blog < Sinatra::Base
+  register Sinatra::ConfigFile
+
+  config_file 'config/site_config.yaml'
+
   set :root, File.expand_path('../', __FILE__)
   set :sprockets, Sprockets::Environment.new(root)
   set :precompile, [ /\w+\.(?!js|css).+/, /(application|vendor).(css|js)$/ ]
@@ -11,9 +16,8 @@ class Blog < Sinatra::Base
   set :assets_path, File.join(root, 'public', assets_prefix)
   set :views, Proc.new { File.join(root, "app/views") }
 
-  set :site_config, Site.new.config
   set :post_service, PostService.new
-  set :rss, RSSBuilder.new(settings.site_config, settings.post_service.posts)
+  set :rss, RSSBuilder.new(settings.site, settings.post_service.posts)
 
   configure do
     ["assets", "vendor"].each do |path|
@@ -32,7 +36,7 @@ class Blog < Sinatra::Base
   end
 
   before do
-    @site_config = settings.site_config
+    @site_config = settings.site
   end
 
   get '/:year/:month/:day/:post' do

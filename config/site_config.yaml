@@ -1,0 +1,18 @@
+site:
+  title:       LP Tech
+  slogan:      Just as excited about tech as we are travel!
+  about:       Keeping you up to date with the latest innovations and news from the Australian Lonely Planet dev shop.
+
+  rss_title:   Lonely Planet Tech RSS feed
+  rss_author:  LP developers
+  rss_about:   Feeding hungry devs
+
+  linked_in:   company/lonely-planet
+  github:      lonelyplanet
+  twitter:     lonelyplanet
+
+  app_name:    spp_blog
+  app_repo:    git@github.com:lonelyplanet/spp_blog.git
+  app_server:  54.252.135.33
+
+  deploy_user: ubuntu
