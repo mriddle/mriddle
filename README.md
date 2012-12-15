@@ -6,7 +6,7 @@ Spin up server
 
 Blog
 ==
- - Update site_config.json
+ - Update site_config.yml
  - Update new relic config
  - Add your logo and update styling if you want
  - Add your posts under the post dir

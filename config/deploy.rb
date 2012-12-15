@@ -2,7 +2,7 @@ require 'new_relic/recipes'
 require "bundler/capistrano"
 require 'yaml'
 
-site_config = YAML.load_file('config/site_config.yaml')["site"]
+site_config = YAML.load_file('config/site_config.yml')["site"]
 
 ssh_options[:forward_agent] = true
 default_run_options[:pty] = true

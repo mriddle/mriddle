@@ -7,7 +7,7 @@ Dir.glob('lib/*.rb').each {|name| require_relative name.gsub('.rb', '') }
 class Blog < Sinatra::Base
   register Sinatra::ConfigFile
 
-  config_file 'config/site_config.yaml'
+  config_file 'config/site_config.yml'
 
   set :root, File.expand_path('../', __FILE__)
   set :sprockets, Sprockets::Environment.new(root)
