@@ -1,4 +1,4 @@
-require_relative 'config/blog'
+require_relative 'app/blog'
 
 namespace :assets do
 
