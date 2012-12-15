@@ -1,6 +1,5 @@
-require_relative 'lib/post_service'
-require_relative 'lib/site'
-require_relative 'lib/rss_builder'
+
+Dir.glob('lib/*.rb').each {|name| require_relative name.gsub('.rb', '') }
 
 class Blog < Sinatra::Base
 
