@@ -1,6 +1,9 @@
 require 'new_relic/recipes'
 require "bundler/capistrano"
 require 'yaml'
+require './lib/environment_initializer'
+
+EnvironmentInitializer.new
 
 site_config = YAML.load_file('config/site_config.yml')["site"]
 
