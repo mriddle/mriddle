@@ -5,3 +5,8 @@ tmp/*
 log
 REVISION
 public/system
+public/assets
+config/secretes.yml
+.powder
+.rvmrc
+.powrc

@@ -19,10 +19,10 @@ set :branch, "master"
 set :rails_env, 'production'
 server site_config['app_server'], :app, :web, :db, :primary => true
 
-%w{ helpers unicorn chef}.each do |f|
+%w{ helpers unicorn chef assets}.each do |f|
   require File.expand_path("../deploy/#{f}", __FILE__)
 end
 
-after "deploy:update", "newrelic:notice_deployment"
+after "deploy:update", "deploy:assets:compile", "newrelic:notice_deployment"
 
 before('deploy:finalize_update', :chef)
