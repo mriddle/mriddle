@@ -80,4 +80,12 @@ class Blog < Sinatra::Base
     haml :'500'
   end
 
+  not_found do
+    haml :'404'
+  end
+
+  error do
+    haml :'500'
+  end
+
 end
