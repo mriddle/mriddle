@@ -1,6 +1,6 @@
 **Staying on master while doing heavy upgrades**
 
-Upgradinating is a process we have used a few times at Lonely Planet now that's saved us a lot of time and grief.
+[Upgradinating](http://www.urbandictionary.com/define.php?term=Upgradinate&defid=6869980) is a process we have used a few times at Lonely Planet now that's saved us a lot of time and grief.
 
 We have recently completed a few technical milestones that have been haunting us for some time:
 
