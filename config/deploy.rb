@@ -1,7 +1,7 @@
 require 'new_relic/recipes'
 require "bundler/capistrano"
 require 'yaml'
-require './lib/environment_initializer'
+require './app/lib/environment_initializer'
 
 EnvironmentInitializer.new
 

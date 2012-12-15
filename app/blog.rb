@@ -1,39 +1,11 @@
-require 'sinatra/base'
-require 'sinatra/config_file'
-require 'sprockets'
+require_relative 'app'
 
-Dir.glob('lib/*.rb').each {|name| require_relative name.gsub('.rb', '') }
+Dir.glob('app/lib/*.rb').each {|name| require_relative "lib/#{File.basename(name, '.*')}" }
 
-class Blog < Sinatra::Base
-  register Sinatra::ConfigFile
-
-  config_file 'config/site_config.yml'
-
-  set :root, File.expand_path('../', __FILE__)
-  set :sprockets, Sprockets::Environment.new(root)
-  set :precompile, [ /\w+\.(?!js|css).+/, /(application|vendor).(css|js)$/ ]
-  set :assets_prefix, 'assets'
-  set :assets_path, File.join(root, 'public', assets_prefix)
-  set :views, Proc.new { File.join(root, "app/views") }
+class Blog < App
 
   set :post_service, PostService.new
   set :rss, RSSBuilder.new(settings.site, settings.post_service.posts)
-
-  configure do
-    ["assets", "vendor"].each do |path|
-      ["stylesheets", "javascripts", "images"].each do |asset_folder|
-        sprockets.append_path(File.join(root, path, asset_folder))
-      end
-    end
-
-    sprockets.context_class.instance_eval do
-      include AssetHelpers
-    end
-  end
-
-  helpers do
-    include AssetHelpers
-  end
 
   before do
     @site_config = settings.site
@@ -70,22 +42,6 @@ class Blog < Sinatra::Base
         puts `bundle exec cap deploy`
       end
     end
-  end
-
-  get '/404' do
-    haml :'404'
-  end
-
-  get '/500' do
-    haml :'500'
-  end
-
-  not_found do
-    haml :'404'
-  end
-
-  error do
-    haml :'500'
   end
 
 end
