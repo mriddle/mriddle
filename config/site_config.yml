@@ -15,4 +15,4 @@ site:
   app_repo:   git@github.com:mriddle/blog.git
   app_server: 203.143.82.172
 
-  deploy_user: ubuntu
+  deploy_user: admin
