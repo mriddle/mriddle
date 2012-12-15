@@ -1,8 +1,8 @@
 require 'new_relic/recipes'
 require "bundler/capistrano"
-require './lib/site'
+require 'yaml'
 
-site_config = Site.new.config
+site_config = YAML.load_file('config/site_config.yml')["site"]
 
 ssh_options[:forward_agent] = true
 default_run_options[:pty] = true
@@ -10,7 +10,7 @@ default_run_options[:pty] = true
 set :application, site_config['app_name']
 set :repository,  site_config['app_repo']
 set :scm, :git
-set :user, "admin"
+set :user, site_config['deploy_user']
 
 set :deploy_to, "/var/www"
 set :deploy_via, :remote_cache
