@@ -1,5 +1,4 @@
-Upgradinate
-===
+**Staying on master while doing heavy upgrades**
 
 Upgradinating is a process we have used a few times at Lonely Planet now that's saved us a lot of time and grief.
 
@@ -56,6 +55,6 @@ Enough talk, time for the code!
  - Easy to test your changes, can setup a CI build on old and new versions
  - You're changes are visible to the rest of the team, less conflicts
  - Ability to push your changes quickly
- 
+
 **More reading**
 - [Branching by abstraction] (http://paulhammant.com/blog/branch_by_abstraction.html)
