@@ -1,13 +1,13 @@
 .post
   .row-fluid
     .span12.well
-      .span9
+      .span10
         .post_title
           %h1
             %a{href: post.permalink}= post.title
         .post_content
           = GitHub::Markdown.render(post.content)
-      .span3
+      .span2
         .post_details
           .published
             .published_header Published
@@ -17,5 +17,5 @@
             .modified
               .published_header Modified
               .published_det
-                %span.modified_by= post.modified_by
+                %span.modified_by= post.modified_by + ";"
                 %span.modified_on= post.modified_on.strftime("%e %b, %Y")
