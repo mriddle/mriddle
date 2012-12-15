@@ -13,14 +13,14 @@
           .span3
             .well.sidebar-nav
               .header_content
-                %h1#page_title= @site_config['title']
-                %p#slogan= @site_config['slogan']
-                #logo
-                .about_section
-                  %p= @site_config['about']
+                %a{:id => "home_link", :href => "/"}
+                  %h1#page_title= @site_config['title']
+                  %p#slogan= @site_config['slogan']
+                  #logo
+                  .about_section
+                    %p= @site_config['about']
+
               %ul.nav.nav-list
-                %li.active
-                  %a{:id => "home_link", :href => "/"} Home
                 %li.nav-header
                   Social
                 - if @site_config['github']
