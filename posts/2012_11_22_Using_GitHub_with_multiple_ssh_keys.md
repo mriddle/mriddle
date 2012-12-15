@@ -1,4 +1,3 @@
-### Using GitHub with multiple SSH keys
 *Great for managing work and personal accounts*
 
 Create two keys
@@ -26,7 +25,7 @@ Make sure they're added
 	$ ssh-add -l
 
 Update the config to use the new keys
-	
+
 	# In this configuration the work key will be my default for github and home is my secondary
 	# more on this below
 	$ vi ~/.ssh/config
@@ -51,7 +50,7 @@ Update the home git repo to make use of our key by adding it to the repo git con
         fetch = +refs/heads/*:refs/remotes/origin/*
         url = git@github.com-home:mriddle/blog.git
 
-**Note:** 
+**Note:**
 You only need to update the git config with key we setup as our secondary, in this case my home key.
 I can leave the .git/config alone for work projects.
 
