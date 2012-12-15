@@ -1,176 +1,38 @@
-body
-  background-color: #555
-  font-family: serif
-  color: #222
-  font-size: 14px
-  padding: 0px
-  margin: 0px
+#content
+  padding-top: 20px
+  padding-bottom: 20px
 
-a
+.post_title
+  border-bottom: 2px solid #E3E3E3
+  margin-bottom: 30px
+  a
+    color: inherit
+    text-decoration: none
+
+.post_details
+  color: #999
+  line-height: 26px
+  font-size: 85%
+
+.published_header
+  color: #666
+  font-weight: bold
+  padding-top: 20px
+
+.published_det
+  padding-left: 10px
+
+.header_content a
+  color: inherit
   text-decoration: none
 
-html, body, #content
-  height: 100%
-
-#social_panel
-  position: fixed
-  top: 6px
-  right: 0px
-  @media screen and (max-width: 960px)
-    display: none
-
-  div
-    display: inline
-    background-color: #7e7e7e
-    margin-right: 5px
-    padding: 5px
-    -webkit-border-radius: 5px
-    -moz-border-radius: 5px
-    border-radius: 5px
-
-  a
-    color: #c3c3c3
-
-    &:hover
-      color: white
-
-#page_title, #slogan
-  font-weight: normal
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75)
-  margin-top: -20px
-
-#page_title
-  color: #444
-  font-size: 24px
-
-#slogan
-  margin-top: -15px
-  color: #777
-  font-size: 12px
-
-.about_section
-  font-size: 12px
+h1
+  font-size: 30px
 
 #logo
-  background: white url(logo.jpg)
+  background: url(logo.png)
   width: 128px
   height: 128px
   margin: auto
-  @media screen and (max-width: 700px)
-    display: none
-
-.header
-  width: 200px
-  float: right
-  margin: 20px
-  @media screen and (max-width: 700px)
-    float: left
-    width: 95%
-    margin-left: 2%
-
-  a#home_link
-    color: black
-
-.header_content
-  background: #F8F8F8 url(sidebar.jpg) no-repeat top center
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 1px 0 1px 0 rgba(0, 0, 0, 0.25), -1px 0 1px 0 rgba(0, 0, 0, 0.25), 0 1px 0 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 0 rgba(255, 255, 255, 0.2) inset
-  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 1px 0 1px 0 rgba(0, 0, 0, 0.25), -1px 0 1px 0 rgba(0, 0, 0, 0.25), 0 1px 0 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 0 rgba(255, 255, 255, 0.2) inset
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 1px 0 1px 0 rgba(0, 0, 0, 0.25), -1px 0 1px 0 rgba(0, 0, 0, 0.25), 0 1px 0 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 0 rgba(255, 255, 255, 0.2) inset
-  padding: 30px 20px 50px 20px
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
-  @media screen and (max-width: 700px)
-    height: inherit
-    background: #F8F8F8
-    padding-bottom: 10px
-
-.page_container
-  min-height: 100%
-  background: white url(grid.jpg)
-  width: 960px
-  margin: auto
-
-  @media screen and (max-width: 700px)
-    width: 95%
-  @media screen and (max-width: 480px)
-    width: 440px
-    margin: 0px
-    padding: 0px
-  @media screen and (max-width: 320px)
-    width: 100%
-
-.posts
-  width: 700px
-  padding-left: 20px
-  padding-right: 240px
-  padding-top: 10px
-  padding-bottom: 10px
-  @media screen and (max-width: 700px)
-    width: 95%
-    padding-right: 0px
-    pre, code
-      word-break: break-all
-  @media screen and (max-width: 480px)
-    width: 450px
-    blockquote
-      margin-left: 10px
-      margin-right: 10px
-  @media screen and (max-width: 320px)
-    width: 95%
-
-.post
-  margin-bottom: 100px
-  @media screen and (max-width: 480px)
-    width: 90%
-    img
-      width: 400px
-  @media screen and (max-width: 320px)
-    img
-      width: 240px
-
-  .post_title
-    border-bottom: 1px solid #CCC
-
-    h1 a
-      color: black
-
-  .post_content
-    padding-left: 30px
-    @media screen and (max-width: 480px)
-      padding-left: 10px
-      word-break: break-all
-
-  .post_details
-    font-weight: bold
-    font-size: 12px
-    font-family: fantasy
-    font-style: italic
-    color: #666
-    border-bottom: 1px solid #CCC
-    height: 18px
-    padding-top: 25px
-
-  .published, .modified
-    padding-right: 5px
-
-    .date, .modified_by, .modified_on
-      opacity: 0.5
-
-  .published
-    padding-left: 50px
-    float: right
-    &:before
-      content: "Published "
-
-  .modified
-    padding-left: 12px
-    float: left
-    &:before
-      content: "Modified By "
-    @media screen and (max-width: 480px)
-      display: none
-
-pre, code
-  line-height: 20px
-  font-family: 'Menlo', 'Courier New', 'Terminal', monospace
-  color: grey
-  white-space: pre-wrap
+  margin-top: 15px
+  margin-bottom: 15px
