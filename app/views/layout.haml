@@ -32,6 +32,11 @@
                 - if @site_config['linked_in']
                   %li.linked_in
                     %a{:href => "http://www.linkedin.com/#{@site_config['linked_in']}", :target => "_blank"} LinkedIn
+                %li.nav-header
+                  Hacks
+                %li
+                  %a{:href => "http://websockets-chat.herokuapp.com/", :title => "Server/Client Chat using HTML5 WebSockets"} WebSockets
+
           .span9
             = yield
 
