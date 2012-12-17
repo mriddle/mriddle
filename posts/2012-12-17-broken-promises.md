@@ -34,7 +34,7 @@ What about if your function throws an exception?
 
 ```javascript
 doDeferred(function() {
-  throw "a tantrum
+  throw "a tantrum"
 })
 ```
 
