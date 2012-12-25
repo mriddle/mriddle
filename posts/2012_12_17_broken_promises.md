@@ -1,5 +1,5 @@
-# Broken Promises: Counter-intuitive Exception Handling with jQuery's Deferred
-## or, why "always" doesn't always mean always
+**Broken Promises: Counter-intuitive Exception Handling with jQuery's Deferred**
+***or, why "always" doesn't always mean always***
 
 Given this code:
 
