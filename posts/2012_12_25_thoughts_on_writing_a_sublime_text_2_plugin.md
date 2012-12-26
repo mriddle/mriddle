@@ -1,8 +1,6 @@
 
 
-## Thoughts on writing a Sublime Text 2 Plugin
-
-* The Console is your friend: ``Ctrl-```. It's the best way to see what's going on, even though Sublime doesn't always log errors. Note that the Console is a Python prompt, so you can run commands interactively, and output Python's print() command from your code.
+* The Python Console within Sublime is your friend: `` Ctrl-` ``. It's the best way to see what's going on, even though Sublime doesn't always log errors. You can run commands interactively, and output Python's print() command from your code.
 
 * If the plugin appears to have loaded but doesn't run, check your syntax (python source, object-literals and settings files). Syntax errors leave no trace if they break the plugin when loading.
 
@@ -20,7 +18,7 @@ As always, if you catch yourself repeating tasks, automate them:
     subl -n $HOME/projects/my/test/project
 ```
 
-* Try to keep your plugin design de-coupled from Sublime. Even though plugins have to extend one of Sublime's Command classes, you can write a simple wrapper Command class that does little more than gather configuration settings. If these settings (including any needed Sublime callbacks) are passed as a config object to your plugin logic, then they can be mocked by tests, and your classes can run independently, giving access to the pydb command-line debugger. (NB: pydb won't work within a Sublime context).
+* Try to keep your plugin design de-coupled from Sublime. Even though plugins have to extend one of Sublime's Command classes, you can write a simple wrapper Command class that does little more than gather configuration settings. These settings (including any Sublime callbacks you need) can be passed as a config object to your plugin logic, which can then be mocked by tests. Your classes will be able to run independently, such as in a test runner, and you'll also gain access to the pydb command-line debugger. (NB: pydb won't work within a Sublime context).
 
 * Any long-running code should be spun off in a separate thread to keep from blocking Sublime. The Default plugin has a comprehensive class (ExecCommand) to execute code asynchronously, though for a simpler alternative, simply pass a function to `thread.start_new_thread` :
 
