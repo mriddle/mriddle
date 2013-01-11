@@ -62,13 +62,16 @@ end
 
 We had a step to ensure the button was disabled which had to be changed. Below is the before and after. If there is a better way of doing this let me know!
 
-```
--Then /^the "([^\"]*)" button is disabled$/ do |title|
--  find_button(title)["disabled"].should_not == nil
--end
-+Then /^the delete button is disabled$/ do
-+  first(".place_action input[type=\"submit\"][value=\"Delete →\"]")[:disabled].should == "true"
-+end
+```ruby
+#before
+Then /^the "([^\"]*)" button is disabled$/ do |title|
+  find_button(title)["disabled"].should_not == nil
+end
+
+#after
+Then /^the delete button is disabled$/ do
+  assert_selector 'input[value="Delete →"][disabled="disabled"]'
+end
 ```
 
 ### rack_server witin driver
