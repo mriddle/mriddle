@@ -1,7 +1,7 @@
-Hello fellow ninjas!
+Hello fellow code monkeys!
 
 Recently upgraded a Rails 3 project here at LP to [Capybara](https://github.com/jnicklas/capybara) 2 from 1.1.2.
-Ran into a few minor bumps along the way and which we've shared below and hopefully it helps others choosing to upgrade.
+Ran into a few minor bumps along the way which we've shared below. Hopefully it helps others choosing to upgrade.
 
 **Useful links:**
 
@@ -38,25 +38,9 @@ class Capybara::Session
 end
 ```
 
-**Learnings on using Capybara over Javascript steps to come soon!**
-
 ### find vs first
 
-There were a lot of places in the code where we would use find instead of first. Most of these were easy to change but sometimes we needed to wait for the page and first wouldn't cut it. To get around this we created a find_first method which would try to find it and if there were more than one just return the first (exactly what the old find did). This was another patch which was fixed up later with better use of selectors.
-
-```ruby
-def find_first(locator)
-  element = nil
-  begin
-    element = find(locator)
-  rescue Capybara::Ambiguous
-    element = first(locator)
-  end
-  return element
-end
-```
-
-**EDIT:** It turns out that you can just use `all(selector).first` because `find` uses `all` under the hood anyway.
+There were a lot of places in the code where we were lazy using using find instead of first. Find was changed to through an Ambiguous error when more than one result was found.
 
 ### checking for disabled elements
 
