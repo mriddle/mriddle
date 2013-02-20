@@ -41,6 +41,66 @@ end
 ### find vs first
 
 There were a lot of places in the code where we were lazy using using find instead of first. Find was changed to through an Ambiguous error when more than one result was found.
+There's a gotcha though in upgradining. Using first will get around the exception but first will not wait for the element to appear on the page. Returning nil is valid.
+
+Why does find wait but first does not? Good question -- Source below
+
+```ruby
+#Taken from Capybara -v 2.0.2
+
+# File lib/capybara/node/finders.rb, line 25
+def find(*args)
+  synchronize { all(*args).find! }.tap(&:allow_reload!)
+end
+
+# File lib/capybara/node/finders.rb, line 131
+def first(*args)
+  all(*args).first
+end
+
+# File lib/capybara/node/base.rb, line 74
+def synchronize(seconds=Capybara.default_wait_time)
+  start_time = Time.now
+
+  begin
+    yield
+  rescue => e
+    raise e if @unsynchronized
+    raise e unless driver.wait?
+    raise e unless driver.invalid_element_errors.include?(e.class) || e.is_a?(Capybara::ElementNotFound)
+    raise e if (Time.now - start_time) >= seconds
+    sleep(0.05)
+    raise Capybara::FrozenInTime, "time appears to be frozen, Capybara does not work with libraries which freeze time, consider using time travelling instead" if Time.now == start_time
+    reload if Capybara.automatic_reload
+    retry
+  end
+end
+
+```
+
+The difference is that when calling find it wraps the `all.find!` call in a synchronize block which will raise an exception if exactly one element is not found meaning. When the exception is thrown it's caught by the synchronize block and the `all.find!` is retried.
+
+It could be argued that the code is missing a synchronized `first` equivelant to but I disagree. I believe the current example is great because it forces you to have specific selectors.
+
+Some useful tips
+
+```ruby
+# Using the :first selector wont save you
+find("parent child:first") # Will throw a Capybara::Ambiguous error
+
+# Be direct, use the child selector
+find("parent > child")
+# Will still return all children directly under parent but can be used return the first block which may be reused.
+# Example:
+find(".manifest_section[data-title='#{section_name}'] > .heading > .content_types_wrapper > input.content_type_selector")
+# Where there may be sub sections which also contain .content_types_wrapper input.content_type_selector
+
+# Take the content into consideration
+find("parent child:contains(cake)")
+
+# Use IDs
+
+```
 
 ### checking for disabled elements
 
