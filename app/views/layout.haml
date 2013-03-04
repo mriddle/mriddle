@@ -24,6 +24,11 @@
 
               %ul.nav.nav-list
                 %li.nav-header
+                  Feed
+                  %li.rss
+                    %a{:href => "/rss"} RSS
+
+                %li.nav-header
                   Social
                 - if @site_config['github']
                   %li.github
