@@ -1,4 +1,6 @@
-# The problem
+# XML transformation with RSLT
+
+## The problem
 
 One of the major tasks in Lonely Planet's switch to producing guidebooks from our shiny new content management system was writing an engine to convert data in our internal "bundle" format to fit templates in the ContentXML format required by our automated layout system [Typefi](http://www.typefi.com).
 
@@ -16,7 +18,7 @@ This seemed like a simple enough XML-to-XML conversion problem, so we initially 
 
 We soon grew to realize that, given the scope of the problem (we're presently at 1867 rules and counting), this was not going to scale.  What to do?
 
-# The solution: RSLT
+## The solution: RSLT
 
 Enter our saviour: [RSLT](https://github.com/DanielHeath/rslt).  Hacked up by [Dan Heath](https://github.com/DanielHeath) in a moment of inspiration, it reduced the monster above to this:
 
@@ -28,7 +30,7 @@ Enter our saviour: [RSLT](https://github.com/DanielHeath/rslt).  Hacked up by [D
 
 The basic idea is simple. An RSLT stylesheet consists of an ordered list of CSS matchers, followed by an action.  Call `stylesheet.transform(@xml)` on an XML document, and it walks the document tag by tag, testing each tag against each rule until it finds a match.  When a match is found, it executes the action with a handy [Builder](http://builder.rubyforge.org/) hook available for attaching your content, and then moves on to the next tag.  Repeat until the source document ends.
 
-# Example
+## Example
 
 An example is worth a thousand words:
 
@@ -75,7 +77,7 @@ Pretty elegant, no?  And easily testable, too, since we could write unit tests f
     
 With the really magical bit being that, *unless explicitly overridden*, the subsequent default rules handle anything else found in the chapter.
 
-# Tricks of the trade
+## Tricks of the trade
 
 Since RSLT's documentation is [prudent enough not to overwhelm the novice with verbosity](http://www.gnu.org/fun/jokes/ed-msg.html), here are some nifty underdocumented features.
 
