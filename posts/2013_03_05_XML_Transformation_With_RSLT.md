@@ -85,33 +85,33 @@ Since RSLT's documentation is [prudent enough not to overwhelm the novice with v
 
 * You can use `helper ModuleName do ... end` blocks within your stylesheet to load methods from a module.  Scoping can get a bit hairy though; in particular, watch out for name conflicts, as having a method of the same name in multiple modules in the same stylesheet can lead to unexpected behaviour.
 
-* The XML tag currently being matched is accessible as `element`, which is a [Nokogiri::XML::Element](http://nokogiri.org/Nokogiri/XML/Element.html) with a huge slew of methods for digging into the XML.
+* The XML tag currently being matched is accessible as `element`, which is a [Nokogiri::XML::Element](http://nokogiri.org/Nokogiri/XML/Element.html) with a huge slew of methods for digging into the tag's context and through it the whole source document.
 
 * To automatically process a tag's children by default, add this line into your methods:
 
 
-    def sample(&block)
-      block ||= lambda { |builder| child_content }
-      p.sample(&block)
-    end
+      def sample(&block)
+        block ||= lambda { |builder| child_content }
+        p.sample(&block)
+      end
 
 
 * `child_content()` can be called multiple times, and it can take a CSS matcher of its own.  This lets you reorder children in the output:
 
 
-    def ploughs_before_hoes
-      child_content('plough')
-      child_content('hoe')
-    end
+      def ploughs_before_hoes
+        child_content('plough')
+        child_content('hoe')
+      end
 
 
 * Stylesheets can extend other stylesheets, just subclass the parent and call super at the end.
 
 
-    class CityGuide::Stylesheet < Compilers::Typefi::Stylesheet
-      def rules
-        ...
-        super
+      class CityGuide::Stylesheet < Compilers::Typefi::Stylesheet
+        def rules
+          ...
+          super
+        end
       end
-    end
 
