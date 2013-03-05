@@ -54,8 +54,7 @@ An example is worth a thousand words:
 The `child_content` bit there simply means "keep processing my children".  And since repeating that and `builder.p(...)` bit is not very [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself), we can wring out the moisture by abstracting them out into a `paragraph` method:
 
     def paragraph(style, &block)
-      block ||= lambda { |builder| child_content }
-      @builder.p(:style => style, &block)
+      @builder.p(:style => style) { child_content }
     end
 
     class MyStylesheet < RSLT::Stylesheet
@@ -66,7 +65,7 @@ The `child_content` bit there simply means "keep processing my children".  And s
       end
     end
 
-Pretty elegant, no?  And easily testable, too, since we could write unit tests for the individual methods plus integration tests that checked the end-to-end XML-to-XML processing.  In this way, we quickly built up a library of reusable bits (paragraphs, headings, sections, points of interest etc), so the layout of an entire chapter could be reduced to:
+Pretty elegant, no?  And easily testable, too, since we can write unit tests for the individual methods, plus integration tests that check that input A converts correctly into expected output B.  In this way, we quickly built up a library of reusable bits (paragraphs, headings, sections, points of interest etc), so the layout of an entire chapter could be reduced to:
 
     within '.understand.title-page' do
       render('> section')           { section('title page')}
@@ -86,9 +85,20 @@ Since RSLT's documentation is [prudent enough not to overwhelm the novice with v
   1. Pass in a block that explicitly calls the method, as in `{ heading(7) }`.  (This requires parens around the match.)
   2. Supply in a hash like `:with => :heading, :level => 7`.  This calls `heading()` and passes in the rest of the hash.  (This does not require parens.)
 
-* You can use `helper ModuleName do ... end` blocks within your stylesheet to load methods from a module.  Just watch out for name conflicts, as having a method of the same name in multiple modules in the same stylesheet can lead to unexpected behaviour.
+* You can use `helper ModuleName do ... end` blocks within your stylesheet to load methods from a module.  Scoping can get a bit hairy though; in particular, watch out for name conflicts, as having a method of the same name in multiple modules in the same stylesheet can lead to unexpected behaviour.
 
-* `child_content` can be called multiple times, and it can take a CSS matcher of its own.  This lets you reorder children in the output:
+* The XML tag currently being matched is accessible as `element`, which is a [Nokogiri::XML::Element](http://nokogiri.org/Nokogiri/XML/Element.html) with a huge slew of methods for digging into the XML.
+
+* To automatically process a tag's children by default, add this line into your methods:
+
+
+    def sample(&block)
+      block ||= lambda { |builder| child_content }
+      p.sample(&block)
+    end
+
+
+* `child_content()` can be called multiple times, and it can take a CSS matcher of its own.  This lets you reorder children in the output:
 
 
     def ploughs_before_hoes
