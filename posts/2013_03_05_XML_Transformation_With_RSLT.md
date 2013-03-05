@@ -1,5 +1,3 @@
-# XML transformation with RSLT
-
 ## The problem
 
 One of the major tasks in Lonely Planet's switch to producing guidebooks from our shiny new content management system was writing an engine to convert data in our internal "bundle" format to fit templates in the ContentXML format required by our automated layout system [Typefi](http://www.typefi.com).
