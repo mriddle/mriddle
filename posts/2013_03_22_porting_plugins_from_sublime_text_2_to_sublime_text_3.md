@@ -1,6 +1,4 @@
 
-## Porting plugins from Sublime Text 2 to Sublime Text 3
-
 The place to begin is the [porting guide](http://www.sublimetext.com/docs/3/porting_guide.html), which lists the main changes (python 3.3, asynchronous events, zipped packages, and so on).
 
 The [plugin API](http://www.sublimetext.com/docs/3/api_reference.html) hasn't changed a great deal. There are a couple of restrictions (most functions now can't be called at importing time), and a few new functions.
