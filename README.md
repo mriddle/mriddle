@@ -1,3 +1,4 @@
+
 Spin up server
 ==
   From within our chef repo
@@ -11,3 +12,9 @@ Blog
  - Add your logo and update styling if you want
  - Add your posts under the post dir
  - `bundle install && rackup`
+
+Adding a new post
+==
+- Create a new file within the ```posts``` directory. Make sure to use underscores in the name.
+- run ```cap deploy```
+
