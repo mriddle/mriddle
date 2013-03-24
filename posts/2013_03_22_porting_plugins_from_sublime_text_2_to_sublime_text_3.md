@@ -47,7 +47,7 @@ If you want to support both ST2 and ST3, add your plugin to sys.path:
 
 #### package control
 
-It's worth [submitting your plugin to Package Control](http://wbond.net/sublime_packages/package_control/package_developers#Submitting_a_Package), to make it easily installable via `⌘-Shift-P`. It's just a matter of
+It's worth [submitting your plugin to Package Control](http://wbond.net/sublime_packages/package_control/package_developers#Submitting_a_Package), to make it easily installable via `⌘-Shift-P`. It's just a matter of:
 * forking https://github.com/wbond/package_control_channel
 * [editing some json files](http://wbond.net/sublime_packages/package_control/package_developers#Submitting_a_Package)
 * submitting a pull request
@@ -59,3 +59,4 @@ References:
 * [Sublime API](http://www.sublimetext.com/docs/3/api_reference.html)
 * [Sublime Technical Forum](http://www.sublimetext.com/forum/)
 * [Package Control](http://wbond.net/sublime_packages/package_control/package_developers#Submitting_a_Package)
+* [Thoughts on writing a Sublime Text 2 plugin](http://headsexploding.lonelyplanet.com/2012/12/25/thoughts_on_writing_a_sublime_text_2_plugin)
