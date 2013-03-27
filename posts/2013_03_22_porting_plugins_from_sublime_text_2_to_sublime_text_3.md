@@ -47,7 +47,7 @@ If you want to support both ST2 and ST3, add your plugin to sys.path:
 
 #### package control
 
-If you still support Sublime Text 2, it's worth [submitting your plugin to Package Control](http://wbond.net/sublime_packages/package_control/package_developers#Submitting_a_Package), though Package Control is [not yet compatible with Sublime Text 3](http://wbond.net/sublime_packages/package_control/installation#ST3).
+If you still support Sublime Text 2, it's worth [submitting your plugin to Package Control](http://wbond.net/sublime_packages/package_control/package_developers#Submitting_a_Package). Package Control for Sublime Text 3 is [currently alpha](http://wbond.net/sublime_packages/package_control/installation#ST3).
 
 ---
 
