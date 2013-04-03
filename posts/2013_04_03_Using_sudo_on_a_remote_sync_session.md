@@ -14,4 +14,7 @@ Run rsync with `--rsync-path`
 
 `rsync -av -e "ssh" --rsync-path="sudo rsync" /source/ dev@target:/foo/`
 
+
+**Pro Tip** Monitor traffic with `nettop -m tcp` and look at the SSH processes
+
 -Matt
