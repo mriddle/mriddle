@@ -8,4 +8,7 @@ I ran `xcode-select --print-path` to make sure it resolved to `/usr/bin`, which 
 
 The fix was to grab a copy of the binary from another machine *(shit I know!)* and stuff it back into `/usr/bin` overriding the bash script which I assume came from the `GCC installer`.
 
+**Note** 
+For the `boxen` users I was also getting this error `nodenv: couldn't find any version specified for use` when trying to interact with node on the command line. Not sure why the boxen node install didn't blow up
+
 -Matt
