@@ -57,6 +57,10 @@ class Blog < Sinatra::Base
     haml :index
   end
 
+  get '/about' do
+    haml :about
+  end
+
   post '/' do
     remote_ip = request.env["HTTP_X_FORWARDED_FOR"]
     puts "Remote IP #{remote_ip}"

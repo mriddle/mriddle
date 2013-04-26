@@ -1,0 +1,11 @@
+.post
+  .row-fluid
+    .span12.well
+      .span10
+        .post_title
+          %h1
+            Development @ LP
+        .post_content
+          = GitHub::Markdown.render(File.open('about.md').read)
+      .span2
+        .post_details
