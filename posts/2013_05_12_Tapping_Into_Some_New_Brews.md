@@ -7,7 +7,7 @@ A Homebrew Tap is just another github repo that Homebrew can use as a source of 
 I recently updated [our Boxen configuration](https://github.com/lonelyplanet/spp_boxen) to PostgreSQL 9.1.9. My teammate Dave asked me where I found a Homebrew formula for 9.1.9 to use in Boxen, since the main Homebrew repo only has 9.2.x. As it happens, the Boxen Puppet manifest we're using packages its own formula and installs it explicitly. If you want to go that way, you can install it via URL by running:
 
 ```shell
-brew install https://raw.github.com/octanner/puppet-postgresql/acbbd7dcb8dcad9e9dd1fcb056933ae003b006e7/files/brews/postgresql.rb
+brew install 'https://raw.github.com/octanner/puppet-postgresql/acbbd7dcb8dcad9e9dd1fcb056933ae003b006e7/files/brews/postgresql.rb'
 ```
 
 If you're not using Boxen, though (e.g., setting up a personal Mac), a better way to go (IMO) is to tap the [homebrew-versions](https://github.com/Homebrew/homebrew-versions) repo, which exists to provide formulae for stable branches of common software:
