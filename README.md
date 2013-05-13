@@ -1,4 +1,3 @@
-
 Spin up server
 ==
   From within our chef repo
@@ -11,7 +10,7 @@ Blog
  - Update new relic config
  - Add your logo and update styling if you want
  - Add your posts under the post dir
- - `bundle install && rackup`
+ - `bundle install && bundle exec rackup`
 
 Adding a new post
 ==
