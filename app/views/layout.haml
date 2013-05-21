@@ -32,6 +32,12 @@
                 - if @site_config['linked_in']
                   %li.linked_in
                     %a{:href => "http://www.linkedin.com/#{@site_config['linked_in']}", :target => "_blank"} LinkedIn
+                - if @site_config['stackoverflow']
+                  %li.stackoverflow
+                    %a{:href => "http://stackoverflow.com/users/#{@site_config['stackoverflow']}", :target => "_blank"} Stack Overflow
+                - if @site_config['coderwall']
+                  %li.coderwall
+                    %a{:href => "https://coderwall.com/#{@site_config['coderwall']}", :target => "_blank"} Coderwall
                 %li.nav-header
                   Hacks
                 %li

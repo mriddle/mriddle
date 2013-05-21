@@ -7,9 +7,12 @@ site:
   rss_author: mriddle
   rss_about:  Feeding hungry devs
 
-  linked_in:  in/mriddle
-  github:       mriddle
-  twitter:    mriddle89
+  linked_in:     in/mriddle
+  github:        mriddle
+  twitter:       mriddle89
+  coderwall:     mriddle
+  stackoverflow: 782058/mriddle89
+
 
   app_name:   blog
   app_repo:   git@github.com:mriddle/blog.git
