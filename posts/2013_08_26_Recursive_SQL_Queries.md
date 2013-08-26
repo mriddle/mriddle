@@ -1,6 +1,6 @@
 Sometimes data in a DB table needs to point to parent or child data. The result is a hierarchy. Here's an example of how folders on a file system might be represented:
 
-<table>
+<table class="data">
 <tr><td>id</td><td>parent_id</td><td>name</td></tr>
 <tr><td>1</td><td> </td><td>Top</td></tr>
 <tr><td>2</td><td>1</td><td>Child 1</td></tr>
@@ -45,7 +45,7 @@ The results from each iteration are also set aside to be returned as results via
 
 The results include everything except the "Other Top" row:
 
-<table>
+<table class="data">
 <tr><td>id</td><td>parent_id</td><td>name</td></tr>
 <tr><td>1</td><td> </td><td>Top</td></tr>
 <tr><td>3</td><td>1</td><td>Child 2</td></tr>
@@ -66,7 +66,7 @@ We can also build a path as we go, to show how we got to a given folder:
     )
     SELECT * FROM folder_tree
 
-<table>
+<table class="data">
 <tr><td>id</td><td>parent_id</td><td>name</td><td>path</td></tr>
 <tr><td>1</td><td> </td><td>Top</td><td>Top</td></tr>
 <tr><td>3</td><td>1</td><td>Child 2</td><td>Top/Child 2</td></tr>
