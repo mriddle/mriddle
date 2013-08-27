@@ -29,7 +29,7 @@ Named after [the artist](http://www.christojeanneclaude.net/), Christo is the ap
 
 ### AWS
 
-AWS is now at the core of our platform. CI, staging, prod and training environments all sit happily in the cloud, where we even run our dev test suites. 
+AWS is now at the core of our platform. CI, staging, prod and training environments all sit happily in the cloud, where we even run our dev test suites.
 
 ### Chef
 
@@ -89,4 +89,5 @@ For those who are keen, there's also:
  - yoga classes
  - dry cleaning and car washing
  - on site parking
- - a 15 minute walk from the train.
+ - free bus service to nearby train station
+
