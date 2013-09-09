@@ -1,0 +1,45 @@
+body {
+  font-size: 16px; }
+
+code, pre {
+  font-size: 14px; }
+
+#content {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.post_title {
+  border-bottom: 2px solid #e3e3e3;
+  margin-bottom: 30px; }
+  .post_title a {
+    color: inherit;
+    text-decoration: none; }
+
+.post_details {
+  color: #999999;
+  line-height: 26px;
+  font-size: 85%; }
+
+.published_header {
+  color: #666666;
+  font-weight: bold;
+  padding-top: 20px; }
+
+.published_det {
+  padding-left: 10px; }
+
+.header_content a {
+  color: inherit;
+  text-decoration: none; }
+
+table.data {
+  background-color: #dddddd; }
+  table.data tr:nth-child(2n) {
+    background-color: #eeeeee; }
+  table.data td {
+    border: 1px solid #999999;
+    padding: 5px; }
+/*
+
+ */
+
