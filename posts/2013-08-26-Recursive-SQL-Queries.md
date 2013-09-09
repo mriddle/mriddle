@@ -9,13 +9,13 @@ Sometimes data in a DB table needs to point to parent or child data. The result 
 <tr><td>5</td><td> </td><td>Other Top</td></tr>
 </table>
 
-In the example, Top and Other Top are in the root (/ or C:\, depending whether you're from Unix world or Windows land). 
+In the example, Top and Other Top are in the root (/ or C:\, depending whether you're from Unix world or Windows land).
 
 So, if I want to get all of the children and grandchildren of "Top" I can use a common table expression. This acts like a recursive query (technically it's iterative, not recursive - see the "how it works" part later for details).
 
 <a name="query_parts"></a>A few parts are involved ([jump to see the whole thing first](#whole_query) if you prefer then come back here for the parts. Go on, I'll wait...):
 
-- A definition for the recursive query 
+- A definition for the recursive query
 <pre>WITH RECURSIVE folder_tree(id, parent_id, name) AS</pre>
 - A starting point. In our case we want to begin at id=1;
 <pre>SELECT id, parent_id, name
@@ -25,12 +25,12 @@ WHERE id = 1</pre>
 - A query that finds the child rows we want, based on what we found last time. In the first iteration, what we found last time will be the row(s) from the starting point. In second iteration, what we found last time will be the things from the first iteration, etc.
 <pre>SELECT folder.id, folder.parent_id, folder.name
 FROM folder, folder_tree
-WHERE folder.parent_id = folder_tree.id</pre> 
+WHERE folder.parent_id = folder_tree.id</pre>
 The results from each iteration are also set aside to be returned as results via the final part as follows...
 - Finally, something that uses the WITH query to return results. In this case, all of them will do:
 <pre>SELECT * FROM folder_tree</pre>
 
-<a name="whole_query"></a>The whole query looks like this ([back to the parts](#query_parts)): 
+<a name="whole_query"></a>The whole query looks like this ([back to the parts](#query_parts)):
 
     WITH RECURSIVE folder_tree(id, parent_id, name) AS (
       SELECT id, parent_id, name

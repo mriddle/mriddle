@@ -4,7 +4,7 @@
 
 * If the plugin appears to have loaded but doesn't run, check your syntax (python source, object-literals and settings files). Syntax errors leave no trace if they break the plugin when loading.
 
-* Sublime will try to re-load your plugin when files change. This can help with small edits or the tweaking of settings files, but be careful: re-loading can be unreliable. After any serious change, a quit and restart is best, making sure to clear out any python bytecode files (`*.pyc`). 
+* Sublime will try to re-load your plugin when files change. This can help with small edits or the tweaking of settings files, but be careful: re-loading can be unreliable. After any serious change, a quit and restart is best, making sure to clear out any python bytecode files (`*.pyc`).
 As always, if you catch yourself repeating tasks, automate them:
 
 ```shell

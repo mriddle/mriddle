@@ -33,7 +33,7 @@ The basic idea is simple. An RSLT stylesheet consists of an ordered list of CSS 
 An example is worth a thousand words:
 
     require 'rslt'
-    
+
     class MyStylesheet < RSLT::Stylesheet
       def rules
         render('parent > child') { builder.p(:style => "child")  { child_content }  }
@@ -48,7 +48,7 @@ An example is worth a thousand words:
     </parent>
     XML
     -> <p style="parent"><p style="child">USE RSLT</p></p>
-    
+
 The `child_content` bit there simply means "keep processing my children".  And since repeating that and `builder.p(...)` bit is not very [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself), we can wring out the moisture by abstracting them out into a `paragraph` method:
 
     def paragraph(style, &block)
@@ -71,7 +71,7 @@ Pretty elegant, no?  And easily testable, too, since we can write unit tests for
       render 'heading',             :with => :title_page_heading
       render('p')                   { paragraph("List C") }
     end
-    
+
 With the really magical bit being that, *unless explicitly overridden*, the subsequent default rules handle anything else found in the chapter.
 
 ## Tricks of the trade
