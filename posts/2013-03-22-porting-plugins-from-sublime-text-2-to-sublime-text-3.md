@@ -1,3 +1,7 @@
+---
+layout : post
+title : Porting Plugins from Sublime Text 2
+---
 
 * The place to begin is the [porting guide](http://www.sublimetext.com/docs/3/porting_guide.html), which lists the main changes (python 3.3, asynchronous events, zipped packages, and so on).
 

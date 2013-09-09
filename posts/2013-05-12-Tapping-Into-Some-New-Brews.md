@@ -1,3 +1,8 @@
+---
+layout : post
+title : Tapping Into Some New Brews
+---
+
 At Lonely Planet's Melbourne headquarters, we occasionally sample some of the beverages on offer at local spots like [The Reverence](http://www.reverencehotel.com/) and [Station Hotel](http://www.thestationhotel.com.au/), and we've even talked about getting a beer fridge in the office, but did you know that you can tap some rare and delicious brews right on your Mac?
 
 A little known but very useful feature of the Homebrew packaging system is what it calls "Taps" (similar to what other, more boring packaging systems typically call sources or repos).

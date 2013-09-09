@@ -1,3 +1,8 @@
+---
+layout : post
+title : Limiting WIP
+---
+
 There are many reasons to limit Work in Progress (WIP). This is explained well by Tonianne DeMaria Barry and Jim Benson in their [Personal Kanban blog](http://www.personalkanban.com/pk/primers/why-limit-your-wip-a-pk-info-series/).
 
 To summarise, limited WIP prevents unfinished work piling up, reduces bottlenecks, reduces distractions, improves communication, helps keep work flowing evenly and prevents wastage. To summarise the summary, limited WIP increases effectiveness.

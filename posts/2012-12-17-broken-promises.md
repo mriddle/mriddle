@@ -1,3 +1,9 @@
+---
+layout : post
+title : Broken promises
+---
+
+
 **Broken Promises: Counter-intuitive Exception Handling with jQuery's Deferred**
 ***or, why "always" doesn't always mean always***
 

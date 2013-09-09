@@ -1,4 +1,9 @@
-Our team has been interested in trying to figure out how to measure our ability to improve both personally and as a team. Our teams purpose is to deliver high-quality software as quickly as possible. This is hard to measure, so the next thing to consider is what the best proxies are. We decided that we would instead measure and improve each developers skills and hope that this would lead to team progress. 
+---
+layout : post
+title : Agile Evaluations
+---
+
+Our team has been interested in trying to figure out how to measure our ability to improve both personally and as a team. Our teams purpose is to deliver high-quality software as quickly as possible. This is hard to measure, so the next thing to consider is what the best proxies are. We decided that we would instead measure and improve each developers skills and hope that this would lead to team progress.
 
 A traditional way to accomplish this is to have a manager (me) sit down with each of the team members and talk to them about their goals and their shortcomings, but the reality is that the other members of the team spend much more time with each other than I do. I asked each person on the team in private if they were comfortable with the idea, and we decided that we were comfortable with each of the team evaluating each other. We all agreed that we would be HONEST and that it would be ANONYMOUS.
 
