@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>title</title>
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/stylesheet.css">
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/js/highlight.pack.js"></script>
+    <script src="{{ site.baseurl }}/js/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span3">
+            <div class="well sidebar-nav">
+              <div class="header_content">
+                <a id="home_link" href="{{ site.baseurl }}/">
+                  <h1 id="page_title">{{ site.name }}</h1>
+                  <p id="slogan">{{ site.slogan }}</p>
+                  <div id="logo"></div>
+                  <div class="about_section">
+                    <p>{{ site.about }}</p>
+                  </div></a>
+              </div>
+              <ul class="nav nav-list">
+                <li class="nav-header">
+                  <a href="{{ site.baseurl }}/about">About Us</a>
+                </li>
+                <li class="nav-header">
+                  Feed
+                  <li class="rss">
+                    <a href="{{ site.baseurl }}/rss">RSS</a>
+                  </li>
+                </li>
+                <li class="nav-header">
+                  Social
+                  <li class="github">
+                    <a href="https://github.com/lonelyplanet">Github</a>
+                  </li>
+                  <li class="twitter">
+                    <a href="https://twitter.com/lonelyplanet">Twitter</a>
+                  </li>
+                  <li class="linked_in">
+                    <a href="http://www.linkedin.com/lonelyplanet">LinkedIn</a>
+                  </li>
+                  <li class="coderwall">
+                    <a href="https://coderwall.com/team/lonely-planet/">coderwall</a>
+                  </li>
+                </li>
+                <li class="nav-header">
+                  Hacks
+                </li>
+                <li>
+                  <span class="disabled_link">Coming Soon</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="span9">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

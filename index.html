@@ -1,0 +1,12 @@
+---
+layout: default
+title: LP Tech
+---
+
+<div id="home">
+  <ul class="posts">
+    {% for post in site.posts %}
+      {% include post.html %}
+    {% endfor %}
+  </ul>
+</div>
