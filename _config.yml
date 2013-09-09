@@ -1,0 +1,6 @@
+name: LP Tech Blog
+markdown: redcarpet
+pygments: true
+safe: true
+lsi: false
+baseurl: /blog
