@@ -10,7 +10,7 @@ title : Thoughts on writing a Sublime Text 2 Plugin
 * Sublime will try to re-load your plugin when files change. This can help with small edits or the tweaking of settings files, but be careful: re-loading can be unreliable. After any serious change, a quit and restart is best, making sure to clear out any python bytecode files (`*.pyc`).
 As always, if you catch yourself repeating tasks, automate them:
 
-```shell
+```bash
     #!/bin/sh
 
     PLUGIN_DIR=`dirname $0`
