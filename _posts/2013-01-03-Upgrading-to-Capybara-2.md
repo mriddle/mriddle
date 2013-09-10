@@ -3,9 +3,7 @@ layout : post
 title : Upgrading to Capybara 2
 ---
 
-Hello fellow code monkeys!
-
-Recently upgraded a Rails 3 project here at LP to [Capybara](https://github.com/jnicklas/capybara) 2 from 1.1.2.
+We recently upgraded a Rails 3 project here at LP to [Capybara](https://github.com/jnicklas/capybara) 2 from 1.1.2.
 Ran into a few minor bumps along the way which we've shared below. Hopefully it helps others choosing to upgrade.
 
 **Useful links:**
