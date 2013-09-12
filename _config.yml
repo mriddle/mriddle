@@ -4,3 +4,4 @@ pygments: true
 safe: true
 lsi: false
 baseurl: /blog
+url: headsexploding.lonelyplanet.com
