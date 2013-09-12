@@ -1,6 +1,7 @@
 ---
 layout : post
 title : Upgradinate
+excerpt: Staying on master while doing heavy upgrades
 ---
 
 **Staying on master while doing heavy upgrades**
