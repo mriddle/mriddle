@@ -8,6 +8,5 @@ public/system
 config/secretes.yml
 .powder
 .rvmrc
-.ruby-version
 .ruby-gemset
 /_site
