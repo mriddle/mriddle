@@ -1,3 +1,9 @@
+---
+layout: post
+title: About Us
+date: 2013-09-13 09:46:18
+---
+
 Lonely Planet is a leading provider of travel information. Our guidebooks dominate the market and we're taking this success into the digital frontier. The SPP dev team develops the platform that creates, manages and publishes our content in all formats; we're at the heart of the business, supporting everything LP does.
 We're always looking for new talent. Our application is written in Rails and Backbone, but smart hackers can adapt, so we're more interested in what you've built than what you've built it in.
 
