@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/github.css">
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/bootstrap.css">
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="{{ site.baseurl}}/css/stylesheet.css">
+    <script src="{{ site.baseurl }}/js/jquery-1.9.1.min.js"></script>
+    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/js/highlight.pack.js"></script>
+    <script src="{{ site.baseurl }}/js/application.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span3">
+            <div class="well sidebar-nav">
+              <div class="header_content">
+                <a id="home_link" href="{{ site.baseurl }}">
+                  <h1 id="page_title">{{ site.name }}</h1>
+                  <p id="slogan">{{ site.slogan }}</p>
+                  <div id="logo"></div>
+                  <div class="about_section">
+                    <p>{{ site.about }}</p>
+                  </div>
+                </a>
+              </div>
+              <ul class="nav nav-list">
+                <li class="nav-header">
+                  Feed
+                  <li class="rss">
+                    <a href="{{ site.baseurl }}/feed.xml">RSS</a>
+                  </li>
+                </li>
+                <li class="nav-header">
+                  Social
+                  <li class="github">
+                    <a href="https://github.com/mriddle">Github</a>
+                  </li>
+                  <li class="twitter">
+                    <a href="https://twitter.com/mriddle89">Twitter</a>
+                  </li>
+                  <li class="linked_in">
+                    <a href="http://www.linkedin.com/in/mriddle">LinkedIn</a>
+                  </li>
+                  <li class="coderwall">
+                    <a href="https://coderwall.com/mriddle/">coderwall</a>
+                  </li>
+                  <li class="stackoverflow">
+                    <a href="http://stackoverflow.com/users/782058/mriddle89/">Stack Overflow</a>
+                  </li>
+                </li>
+                <li class="nav-header">
+                  Hacks
+                </li>
+                <li>
+                  <span class="disabled_link">Coming Soon</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="span9">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
