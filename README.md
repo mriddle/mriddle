@@ -1,6 +1,4 @@
-## Lonely Planet public facing technical blog
-
-A blog for Lonely Planet technical staff to share their technical encounters, for the purpose of increasing awareness of LP's technical prowess, capabilities and interesting technical challenges.
+http://mriddle.github.io
 
 ### Writing a post
 
@@ -11,7 +9,7 @@ When you're ready to publish a post move it into the `_posts` folder.
 
 `git push`
 
-Our blog is setup with just the `gh-pages` branch so anything you do in this branch will be displayed on our site on push. (It can take up to 10 minutes to be reflected)
+Setup with just the `gh-pages` branch so anything you do in this branch will be displayed on the site on push. (It can take up to 10 minutes to be reflected)
 
 ### Development
 
