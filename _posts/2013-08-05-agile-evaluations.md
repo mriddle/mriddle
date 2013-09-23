@@ -1,6 +1,7 @@
 ---
 layout : post
 title : Agile Evaluations
+author: Jonathan Ricketson
 ---
 
 Our team has been interested in trying to figure out how to measure our ability to improve both personally and as a team. Our teams purpose is to deliver high-quality software as quickly as possible. This is hard to measure, so the next thing to consider is what the best proxies are. We decided that we would instead measure and improve each developers skills and hope that this would lead to team progress.

@@ -1,6 +1,7 @@
 ---
 layout : post
 title : Continuous Improvement via Kanban
+author: James Holmes
 ---
 
 

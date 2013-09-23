@@ -15,8 +15,8 @@
                   <div class="published">
                     <div class="modified">
                       <div class="published_date">
-                        <span class="modified_by"></span>
-                        <span class="modified_on">{{ post.date | date_to_string }}</span>
+                        <div class="modified_on">{{ post.date | date_to_string }}</div>
+                        <div class="modified_by">by {{ post.author }}</div>
                       </div>
                     </div>
                   </div>

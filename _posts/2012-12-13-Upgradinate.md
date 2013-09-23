@@ -2,6 +2,7 @@
 layout : post
 title : Upgradinate
 excerpt: Staying on master while doing heavy upgrades
+author: Matthew Riddle
 ---
 
 **Staying on master while doing heavy upgrades**

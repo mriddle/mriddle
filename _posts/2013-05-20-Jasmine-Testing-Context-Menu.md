@@ -2,6 +2,7 @@
 layout : post
 title : Jasmine Testing Context Menu
 excerpt: How to use Javascript to manipulate the various operations of contextMenu in an automated test. Herewith a couple of points you may find useful...
+author: Adel Smee
 ---
 
 We've just spent a delightful day writing Jasmine tests for our use of the JQuery [contextMenu](https://github.com/medialize/jQuery-contextMenu) plugin. ContextMenu is a useful piece of code that does exactly what it promises to and is simple to use to boot. What isn't obvious is how to use Javascript to manipulate the various operations of contextMenu in an automated test. Herewith a couple of points you may find useful:

@@ -39,7 +39,7 @@ table.data {
   table.data td {
     border: 1px solid #999999;
     padding: 5px; }
-/*
 
- */
-
+.modified_by {
+  font-size: 12px;
+  font-style: italic; }

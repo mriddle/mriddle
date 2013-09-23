@@ -2,6 +2,7 @@
 layout : post
 title : XML Transformation with RSLT
 excerpt: One of the major tasks in Lonely Planet's switch to producing guidebooks from our shiny new CMS was writing an engine to convert data to fit templates in the ContentXML format required by our automated layout system. This seemed like a simple enough XML-to-XML conversion problem, so we initially tackled this with XSLT, but it soon became clear that the mapping was way more complicated than one-to-one.
+author: Jani Patokallio
 ---
 
 ## The problem

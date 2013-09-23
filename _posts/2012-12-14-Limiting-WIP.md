@@ -1,6 +1,7 @@
 ---
 layout : post
 title : Limiting WIP
+author: James Holmes
 ---
 
 There are many reasons to limit Work in Progress (WIP). This is explained well by Tonianne DeMaria Barry and Jim Benson in their [Personal Kanban blog](http://www.personalkanban.com/pk/primers/why-limit-your-wip-a-pk-info-series/).

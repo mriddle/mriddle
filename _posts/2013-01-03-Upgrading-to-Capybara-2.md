@@ -1,6 +1,7 @@
 ---
 layout : post
 title : Upgrading to Capybara 2
+author: Matthew Riddle
 ---
 
 We recently upgraded a Rails 3 project here at LP to [Capybara](https://github.com/jnicklas/capybara) 2 from 1.1.2.
