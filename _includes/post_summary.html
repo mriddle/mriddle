@@ -1,3 +1,4 @@
+        {% assign author = site.authors[post.author] %}
         <div class="post">
           <div class="row-fluid">
             <div class="span12 well">
@@ -16,7 +17,7 @@
                     <div class="modified">
                       <div class="published_date">
                         <div class="modified_on">{{ post.date | date_to_string }}</div>
-                        <div class="modified_by">by {{ post.author }}</div>
+                        <div class="modified_by">{{ author.display_name }}</div>
                       </div>
                     </div>
                   </div>

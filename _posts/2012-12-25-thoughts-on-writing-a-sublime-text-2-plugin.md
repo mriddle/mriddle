@@ -2,7 +2,7 @@
 layout : post
 title : Thoughts on writing a Sublime Text 2 Plugin
 excerpt: Tips and tricks on writing your very own Sublime Text 2 Plugin
-author: David Hodges
+author: dhodges
 ---
 
 * The Python Console within Sublime (`` Ctrl-` ``) is your friend. You can run commands interactively, and output Python's print() command from your code.

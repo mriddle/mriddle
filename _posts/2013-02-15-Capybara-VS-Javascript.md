@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Capybara vs Javascript
-author: Matthew Riddle
+author: mriddle
 ---
 
 After upgrading to Capybara 2 we spent a lot of time giving love to our neglected child. Feature/Acceptance tests. We had a lot of them and it was always the place we spent the least amount of time, we would write a few step definitions and throw in a few Capybara calls but more often than not we would write some javascript to interact with the page.

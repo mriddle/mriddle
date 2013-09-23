@@ -2,7 +2,7 @@
 layout : post
 title : Recursive SQL Queries
 excerpt: Returning hierarchical data in a timely fashion
-author: James Holmes
+author: jholmes
 ---
 
 Sometimes data in a DB table needs to point to parent or child data. The result is a hierarchy. Here's an example of how folders on a file system might be represented:

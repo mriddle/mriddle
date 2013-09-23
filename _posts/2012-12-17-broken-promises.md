@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Broken promises
-author: Tim Moore
+author: tmoore
 ---
 
 

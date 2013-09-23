@@ -5,3 +5,52 @@ safe: true
 lsi: false
 baseurl: /blog
 url: headsexploding.lonelyplanet.com
+authors:
+  mriddle:
+    display_name: Matt Riddle
+    email: matthew.riddle@lonelyplanet.com.au
+    web: http://www.mriddle.com/
+    twitter: mriddle89
+    github: mriddle
+    gravatar: a9bc4b096d30752506ea4edac12ada93
+  tmoore:
+    display_name: Tim Moore
+    email: tim.moore@lonelyplanet.com.au
+    web: https://coderwall.com/timmoore
+    twitter: tmoore
+    github: TimMoore
+    gravatar: 2e90f09dc8fd7f1506b245f09e97bb7c
+  jpatokallio:
+    display_name: Jani Patokallio
+    web: http://gyrovague.com/
+    twitter: jpatokal
+    github: jpatokal
+    gravatar: f31e115e8e42d4f1defa4830af4b2028
+  asmee:
+    display_name: Adel Smee
+    email: adel.smee@lonelyplanet.com.au
+    web: https://coderwall.com/adelsmee
+    twitter: adelsmee
+    github: adelsmee
+    gravatar: 75d57f214bf9b9e8f57e4b2cf473a340
+  dhodges:
+    display_name: David Hodges
+    email: david.hodges@lonelyplanet.com.au
+    web: https://coderwall.com/dhodges
+    twitter: pedalwink
+    github: dhodges
+    gravatar: 73d880249350ad09e932cb9f48246d1c
+  jholmes:
+    display_name: James Holmes
+    email: james.holmes@lonelyplanet.com.au
+    web: http://www.bifrost.com.au/
+    twitter:
+    github: holmesjr
+    gravatar:
+  jricketson:
+    display_name: Jon Ricketson
+    email: jonathan.ricketson@lonelyplanet.com.au
+    web: https://coderwall.com/jricketson
+    twitter:
+    github: jricketson
+    gravatar: 37187938f56bc1da460f68b95996c180
