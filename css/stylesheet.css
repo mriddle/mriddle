@@ -32,6 +32,9 @@ code, pre {
   color: inherit;
   text-decoration: none; }
 
+.footnote {
+  font-size: 13px;
+}
 table.data {
   background-color: #dddddd; }
   table.data tr:nth-child(2n) {
