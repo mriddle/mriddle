@@ -19,4 +19,4 @@ Run the following line from within the project and make your changes.
 
 `bundle exec jekyll serve --watch --baseurl ""`
 
-Jekyll will automatically update as you updated the blog. If you want to know more, this (Using Jekyll)[https://help.github.com/articles/using-jekyll-with-pages] page is wonderfully basic.
+Jekyll will automatically update as you updated the blog. If you want to know more, this [Using Jekyll](https://help.github.com/articles/using-jekyll-with-pages) page is wonderfully basic.
