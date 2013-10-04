@@ -143,7 +143,7 @@ Can't keep digitally still. Constantly flicking between windows, highlighting ra
    * If watching a Twitcher twitch you are allowed to ask them to please stop.
 
 <div class="archetype_image">
-  <img src="http://images2.fanpop.com/images/polls/302000/302992_1253690373426_80.jpg?v=1253690635" alt="Professor McGonagall" />
+  <img src="http://2.bp.blogspot.com/_Yre-SoIqCsQ/TJuQTE0ws2I/AAAAAAAAEos/0NKnvDkNq5g/s320/maggieasminerva.jpg"  width="80px" height="80px" alt="Professor McGonagall" />
 </div>
 ##### The Constant Corrector
 Cannot tolerate a mistake on the screen and corrects you as you type.
