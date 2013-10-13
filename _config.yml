@@ -4,7 +4,7 @@ pygments: true
 safe: true
 lsi: false
 baseurl: /blog
-url: headsexploding.lonelyplanet.com
+url: hackpackers.lonelyplanet.com
 authors:
   mriddle:
     display_name: Matt Riddle
