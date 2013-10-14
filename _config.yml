@@ -3,7 +3,7 @@ markdown: redcarpet
 pygments: true
 safe: true
 lsi: false
-baseurl: /blog
+baseurl:
 url: hackpackers.lonelyplanet.com
 authors:
   mriddle:
