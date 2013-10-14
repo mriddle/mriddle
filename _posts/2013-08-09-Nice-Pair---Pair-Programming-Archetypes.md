@@ -7,11 +7,11 @@ author: asmee
 
 ###### What kind of pair programmer are you?
 
-Pair programming is an excellent method of producing quality software, minimising business risk and making everyone in the team smarter. It can be a fun social activity for those of us of the nerd persuasion. And it can also be frustrating, boring, aggravating and a waste of time. I'm interested in what makes a pair gel, how to maximise the good times and minimise the not-so-good times. I'm not a clinical researcher, just a software developer writing from personal experience and those of my peers. 
+Pair programming is an excellent method of producing quality software, minimising business risk and making everyone in the team smarter. It can be a fun social activity for those of us of the nerd persuasion. And it can also be frustrating, boring, aggravating and a waste of time. I'm interested in what makes a pair gel, how to maximise the good times and minimise the not-so-good times. I'm not a clinical researcher, just a software developer writing from personal experience and those of my peers.
 
-Pair programming is good for business and good for programmers, that's what repeated studies tell us. There are a lot of resources out there on how to pair program and some resources on how to do it well, most of which focus on the code. Code is simple. Once you write it down it stays written down, has repeatable outcomes and doesn't self-mutate over time (yet). We can write standards and rules and heuristics for writing code in pairs and measure the outcomes and draw conclusions. 
+Pair programming is good for business and good for programmers, that's what repeated studies tell us. There are a lot of resources out there on how to pair program and some resources on how to do it well, most of which focus on the code. Code is simple. Once you write it down it stays written down, has repeatable outcomes and doesn't self-mutate over time (yet). We can write standards and rules and heuristics for writing code in pairs and measure the outcomes and draw conclusions.
 
-People on the other hand are only consistent in their inconsistency, don't always produce the same outputs with the same inputs and often don't have compatible interfaces. Understanding what we bring to the pair can help us moderate our own less helpful characteristics and develop useful ones. Below is a list of pair programming archetypes with Highlights and Lowlights for each plus a Check Yourself section which might be helpful if you find yourself in a category, or pairing with someone in that category. 
+People on the other hand are only consistent in their inconsistency, don't always produce the same outputs with the same inputs and often don't have compatible interfaces. Understanding what we bring to the pair can help us moderate our own less helpful characteristics and develop useful ones. Below is a list of pair programming archetypes with Highlights and Lowlights for each plus a Check Yourself section which might be helpful if you find yourself in a category, or pairing with someone in that category.
 
 <a name="finger-operated"></a>
 <div class="archetype_image">
@@ -186,7 +186,7 @@ It is 4pm on a Friday, you are going to the beach for the weekend and have remem
  * **Check Yourself:**
    * DO NOT PICK UP YOUR PHONE.
 
-Like all attempts at categorisation you probably won't fit entirely into one of these boxes but are more likely to be a combination of several. Becoming aware of which categories you fall into will help you to lean into the strengths of the archetype and also to minimise those that interfere with effective pairing. This list isn't designed to make you feel superior or inadequate, we've all had our N00b days and our Brainiac days. By no means is this list meant to be exhaustive, add your own to help us all become nicer pairs. 
+Like all attempts at categorisation you probably won't fit entirely into one of these boxes but are more likely to be a combination of several. Becoming aware of which categories you fall into will help you to lean into the strengths of the archetype and also to minimise those that interfere with effective pairing. This list isn't designed to make you feel superior or inadequate, we've all had our N00b days and our Brainiac days. By no means is this list meant to be exhaustive, add your own to help us all become nicer pairs.
 
 <div class="footnote">
   <hr />
@@ -194,4 +194,4 @@ Like all attempts at categorisation you probably won't fit entirely into one of 
   <br />
   <br />
   [Top](#finger-operated)
-<div>
+</div>
