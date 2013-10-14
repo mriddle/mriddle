@@ -193,5 +193,5 @@ Like all attempts at categorisation you probably won't fit entirely into one of 
   <a name="footnote"></a>* I'm so over the male/female pronoun issue, so I'll be using he/she randomly throughout, no gender profiling intended.
   <br />
   <br />
-  [Top](#finger-operated)
+  <a href="#finger-operated">Top</a>
 </div>
