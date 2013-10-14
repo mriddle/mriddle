@@ -2,6 +2,7 @@
 layout : post
 title : Nice Pair - Pair Programming Archetypes
 excerpt: What kind of pair programmer are you?
+author: adelsmee
 ---
 
 ###### What kind of pair programmer are you?
