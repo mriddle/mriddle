@@ -2,9 +2,10 @@
 layout : post
 title : Monitoring our applications - Ruby - Methods
 author: mwatts
+excerpt: Fozzie was good, and we were happy with progress. We were monitoring applications in real time, the code was looking ok, and the stats looked good on the big screens. On reflection of the code though, we felt there was room for improvement on the way in which we were referencing Fozzie for the timing of code.
 ---
 
-Fozzie was good, and we were happy with progress. We were monitoring applications in real time, the code was looking ok, and the stats looked good on the big screens. On reflection of the code though, we felt there was room for improvement on the way in which were were referencing Fozzie for the timing of code.
+Fozzie was good, and we were happy with progress. We were monitoring applications in real time, the code was looking ok, and the stats looked good on the big screens. On reflection of the code though, we felt there was room for improvement on the way in which we were referencing Fozzie for the timing of code.
 
 We saw a constant pattern of:
 
