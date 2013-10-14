@@ -79,3 +79,12 @@ table.data {
 .modified_by {
   font-size: 12px;
 }
+
+#logo {
+  background: url("../img/logo.png");
+  width: 128px;
+  height: 128px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
