@@ -2,6 +2,7 @@
 layout: post
 title: Performance and metrics tools and resources
 author: mjennings
+excerpt: Tools and resources mentioned in our VelocityConf talk
 ---
 
 As promised, here are all the tools and resources mentioned in our ([@mjenno](https://twitter.com/mjenno) and [@davenolan](https://twitter.com/davenolan)) [talk at VelocityConf today.](http://velocityconf.com/velocityeu2012/public/schedule/detail/26634)

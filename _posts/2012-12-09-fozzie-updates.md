@@ -2,6 +2,7 @@
 layout: post
 title: Fozzie Updates
 author: mjennings
+excerpt: Fozzie 1.0!
 ---
 
 This week we received a pull request to the [Fozzie](https://github.com/lonelyplanet/fozzie) gem, which enabled developers to turn off the Fozzie Rails Middleware when used within a Rails application.

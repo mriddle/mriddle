@@ -2,6 +2,7 @@
 layout: post
 title: Object Oriented Sass
 author: mjennings
+excerpt: Breakdown and comparisson of OOCSS
 ---
 
 I've been re-examining how we declare and manage CSS objects at LP, recently using the placeholder syntax (%) in Sass over a class. I had a couple of reservations around this, partly because its a leap away from the traditional OOCSS method of using multiple classes as building blocks but also in its usability and impact on performance.
@@ -153,6 +154,6 @@ The Profiled results for both pages:
 
 Whilst our test showed there was no huge performance benefit for this approach, it also failed to show a **downside** for it. This, for me, is a validation of the approach and allows us to look at the more intangible benefits we outlined earlier.
 
-I also think there are performance gains to be made when scaling up. Well use our Sass gem, Beaker, across a fairly wide range of projects and using this will mean each project has access to all objects and base classes as well as the ability to pick and choose which are required and which will be output to their project.css file.
+I also think there are performance gains to be made when scaling up. We'll use our Sass gem, Beaker, across a fairly wide range of projects and using this will mean each project has access to all objects and base classes as well as the ability to pick and choose which are required and which will be output to their project.css file.
 
 Whether or not this approach is right for you is likely dependant on your existing css architecture. For us, we have the opportunity to shape our future CSS and I think this is a healthy way of doing it.

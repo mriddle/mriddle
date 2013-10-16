@@ -2,6 +2,7 @@
 layout: post
 title: How to get a job with our Engineering team
 author: mjennings
+excerpt: Want to join our team of coding sloths?
 ---
 
 We're looking to hire enthusiastic, energetic and clever people. Are you great at Linux? AWS? Postgres? Ruby? MS SQL? A little of each, or a specialist in one field?

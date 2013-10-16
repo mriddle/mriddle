@@ -2,9 +2,10 @@
 layout: post
 title: A History of Web Performance @ Lonely Planet
 author: mjennings
+excerpt: Screamingly fast is now a requirement of all our projects. We've only made incremental improvements to our page performance over the past couple of years but this is about to change dramatically. Ill be sharing our progress on this blog. Were also experimenting with tools to help us capture performance data in real time and well share some of this data when we can.
 ---
 
-Screamingly fast is now a requirement of all our projects. Weve only made incremental improvements to our page performance over the past couple of years but this is about to change dramatically. Ill be sharing our progress on this blog. Were also experimenting with tools to help us capture performance data in real time and well share some of this data when we can.
+Screamingly fast is now a requirement of all our projects. We've only made incremental improvements to our page performance over the past couple of years but this is about to change dramatically. Ill be sharing our progress on this blog. Were also experimenting with tools to help us capture performance data in real time and well share some of this data when we can.
 
 If you're in London and want to know more about what were doing at Lonely Planet, were presenting at the London Web Performance Meetup on [Metrics Driven Engineering](http://www.meetup.com/London-Web-Performance-Group/events/69285112/). Come down and check us out, we'd love to see you!
 

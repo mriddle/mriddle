@@ -2,6 +2,7 @@
 layout: post
 title: London ElasticSearch user group #1
 author: mjennings
+excerpt: One of the great things about working for Lonely Planet is the opportunity to get out and about at meetups and conferences. Last week we organised and sponsored the first London ElasticSearch user group meetup.
 ---
 
 One of the great things about working for Lonely Planet is the opportunity to get out and about at meetups and conferences. Last week we organised and sponsored the first London ElasticSearch user group meetup.

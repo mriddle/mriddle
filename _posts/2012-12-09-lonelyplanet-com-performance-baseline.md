@@ -2,9 +2,10 @@
 layout: post
 title: lonelyplanet.com Performance Baseline
 author: mjennings
+excerpt: Performance review, reflection and improvements
 ---
 
-In our [first post](/2012/12/09/a-history-of-web-performance-lonely-planet.html) on site performance we promised to share some figures baselining our current performance. Since then, weve been preparing for [our presentation at Velcoity EU](http://velocityconf.com/velocityeu2012/public/schedule/detail/26634) so it's taken longer than hoped to share these figures.
+In our [first post](/2012/12/09/a-history-of-web-performance-lonely-planet.html) on site performance we promised to share some figures baselining our current performance. Since then, we've been preparing for [our presentation at Velcoity EU](http://velocityconf.com/velocityeu2012/public/schedule/detail/26634) so it's taken longer than hoped to share these figures.
 
 To baseline our performance, weve gathered figures for August on major areas of our site. These are full page load times using backbone tests in IE8 averaged across US, UK and Australia:
 

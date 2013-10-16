@@ -2,6 +2,7 @@
 layout: post
 title: Chef staging environment
 author: mjennings
+excerpt: Detecting problematic Chef changes before rolling out updates.
 ---
 
 **Current situation**
