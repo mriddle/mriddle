@@ -1,0 +1,22 @@
+---
+layout: post
+title: Paying down Technical Debt
+---
+
+Every software project I've worked on has, over time, built up [technical debt](http://martinfowler.com/bliki/TechnicalDebt.html), and the platform we work on here at Lonely Planet is no exception. Even just trying to keep up libraries up to date and employ new recommended techniques means that the code gets inconsistent and some becomes stale, which means that over time we'll start moving more slowly because the codebase becomes harder and harder to add to. We have a few techniques to try and avoid paying too much "interest".
+
+Firstly, and I think most importantly, we try to follow a kind of "Boy Scout Rule" (leave the code cleaner than you found it). Pairing helps here, because we keep each other honest - often I'm anxious to finish a card and move on to the next one, but my pair reminds me that we really should write that missing test.
+
+This serves a couple of purposes other than paying down technical debt: it's rewarding as a developer to feel like I'm making the codebase better - it can be demotivating and wearing if I constantly find myself thinking, I shouldn't use this crappy thing, but it's like this everywhere else; or I really should do this better, but I just don't have time. When I do that, the next person that comes along will think the same, and the codebase just keeps getting worse - this is known as [Broken Windows theory](http://en.wikipedia.org/wiki/Broken_windows_theory).
+
+It's not uncommon, however, to run into a piece of code that we haven't changed for a while and see a better way to structure it ... but it's often a pretty large and time consuming piece of work to do what we want to. To avoid getting derailed on our current work, we record the changes we want to make as a tech card.
+
+Tech cards are prioritised in a separate backlog, and we try to get through at least one or two every week, which is a good way of making sure that at least our highest priority technical problems get addressed. We also have a scheduled dev day once a fortnight, when we can pick something to work on from the technical or bug backlog.
+
+But it doesn't solve everything - there are a lot of smaller tech cards that we can't quite bear to throw away, but that are unlikely to ever be important enough to make it into our backlog, and some larger ones that would disrupt development so much that we just can't find a good time to take them on, despite our best intentions. The tech backlog was starting to outgrow its wallspace, something that I've definitely seen happen on other teams - and it's pretty demotivating to just see the list of problems keep growing and feel like we'll never get through it.
+
+So last week we scheduled our first Tech Week (in other teams we've called it an Engineering Health week), an entire week for the whole team to focus just on tech cards. It was a big success, in our Monday retrospective the team unanimously voted to make it a regular thing. We made a lot of progress on a major refactoring, we cleared off almost all of our high priority tech cards, and we had FUN! In fact, one of our retrospective topics was to try and figure out how we can maintain the level of passion from tech week through to our normal sprint!
+
+Other references
+[http://www.codinghorror.com/blog/2009/02/paying-down-your-technical-debt.html](http://www.codinghorror.com/blog/2009/02/paying-down-your-technical-debt.html)
+[http://blog.crisp.se/2013/07/12/henrikkniberg/the-solution-to-technical-debt](http://blog.crisp.se/2013/07/12/henrikkniberg/the-solution-to-technical-debt)
