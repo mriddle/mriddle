@@ -4,21 +4,18 @@
             <div class="span12 well">
               <div class="span10">
                 <div class="post_title">
-                  <a href="{{ site.baseurl }}{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                  <a href="{{ site.baseurl }}{{ post.url }}"><h3 class="copy--h3">{{ post.title }}</h3></a>
                 </div>
                 <div class="post_content">
                   <p>{{ post.excerpt }}</p>
                 </div>
                 <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
               </div>
-              <div class="span2">
-                <div class="post_details">
-                  <div class="published">
-                    <div class="modified">
-                      <div class="published_date">
-                        <div class="modified_on">{{ post.date | date_to_string }}</div>
-                        <div class="modified_by">{{ author.display_name }}</div>
-                      </div>
+              <div class="post_details">
+                <div class="published">
+                  <div class="modified">
+                    <div class="published_date">
+                      <span class="modified_on">{{ post.date | date_to_string }}</span> by <span class="modified_by">{{ author.display_name }}</span>
                     </div>
                   </div>
                 </div>

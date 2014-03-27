@@ -3,84 +3,84 @@
   <head>
     <title>{{ page.title }}</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport" />
-     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans" />
-     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Sanchez" />
-    <link rel="stylesheet" href="{{ site.baseurl}}/css/stylesheet.css" />
-    <link rel="stylesheet" href="{{ site.baseurl}}/css/github.css" />
-    <link rel="stylesheet" href="{{ site.baseurl}}/css/bootstrap.css" />
-    <link rel="stylesheet" href="{{ site.baseurl}}/css/bootstrap-responsive.css" />
-    <script src="{{ site.baseurl }}/js/jquery-1.9.1.min.js"></script>
-    <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-    <script src="{{ site.baseurl }}/js/highlight.pack.js"></script>
-    <script src="{{ site.baseurl }}/js/application.js"></script>
+    <link rel="stylesheet" href="http://localhost:9000/bootstrap/rizzo-bootstrap.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <script src="/js/highlight.pack.js"></script>
+    <script src="/js/application.js"></script>
   </head>
   <body>
-    <div id="content">
-      <div class="container">
-        <div class="row-fluid">
-          <div class="span3">
-            <div class="well sidebar-nav">
-              <div class="header_content">
-                <a id="home_link" href="{{ site.baseurl }}/">
-                  <div id="logo"></div>
-                  <div class="about_section">
-                    <p>{{ site.about }}</p>
-                  </div></a>
-              </div>
-              <ul class="nav nav-list">
-                <li class="nav-header">
-                  <a href="{{ site.baseurl }}/about.html">About Us</a>
-                </li>
-                <li class="nav-header">
-                  Feed
-                  <li class="rss">
-                    <a href="{{ site.baseurl }}/feed.xml">RSS</a>
-                  </li>
-                </li>
-                <li class="nav-header">
-                  Social
-                  <li class="github">
-                    <a href="https://github.com/lonelyplanet">Github</a>
-                  </li>
-                  <li class="twitter">
-                    <a href="https://twitter.com/lonelyplanet">Twitter</a>
-                  </li>
-                  <li class="linked_in">
-                    <a href="http://www.linkedin.com/company/lonely-planet">LinkedIn</a>
-                  </li>
-                  <li class="coderwall">
-                    <a href="https://coderwall.com/team/lonely-planet/">coderwall</a>
-                  </li>
-                </li>
-                <li class="nav-header">
-                  Hacks
-                </li>
-                <li>
-                  <span class="disabled_link">Coming Soon</span>
-                </li>
-                <li class="nav-header">
-                  Work for LP
-                </li>
-                <li class="jobs">
-                  <a href="http://www.lonelyplanet.com/jobs/" class="hero-unit">Now Hiring</a>
-                </li>
-              </ul>
+  <div class="wrapper">
+    <div class="row--primary">
+      <div class="nav-container">
+        <div class="row row--primary">
+          <div class="split--left">
+            <div class="wv--nav--inline nav--primary" id="js-nav--primary">
+              <a class="media--lp-logo logo--header icon--lp-logo icon--white" href="/"></a>
+              <h1 class="title--primary title--blog">Blog</h1>
             </div>
-          </div>
-          <div class="span9">
-            {{ content }}
           </div>
         </div>
       </div>
     </div>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <div class="row row--content copy--body context--content">
+      <div class="row__inner row__inner--content">
+        <div class="row row--secondary">
+          <div class="row__inner row__inner--secondary">
+            
+          </div>
+        </div>
+        <div class="grid-wrapper--10">
+          
+          <div class="col--one-fifth">
 
-    ga('create', 'UA-44258102-1', 'lonelyplanet.github.io');
-    ga('send', 'pageview');
-  </script>
-  </body>
+            <ul class="nav nav-list">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li class="nav-header">
+                <a href="/about.html">About Us</a>
+              </li>
+              <li class="rss">
+                <a href="/feed.xml">RSS Feed</a>
+              </li>
+              <li class="github">
+                <a href="https://github.com/lonelyplanet">Github</a>
+              </li>
+              <li class="twitter">
+                <a href="https://twitter.com/lonelyplanet">Twitter</a>
+              </li>
+              <li class="linked_in">
+                <a href="http://www.linkedin.com/company/lonely-planet">LinkedIn</a>
+              </li>
+              <li class="coderwall">
+                <a href="https://coderwall.com/team/lonely-planet/">coderwall</a>
+              </li>
+              <li class="jobs">
+                <a href="http://www.lonelyplanet.com/jobs/" class="hero-unit">Now Hiring</a>
+              </li>
+            </ul>
+            
+
+          </div>
+
+          <div class="col--four-fifths">
+            {{ content }}
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  
+  </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44258102-1', 'lonelyplanet.github.io');
+  ga('send', 'pageview');
+</script>
+</body>
 </html>
