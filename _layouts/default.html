@@ -1,4 +1,62 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- curl the latest rizzo resources before building jekyll -->
+
+<!-- curl -o _includes/head.html http://rizzo.lonelyplanet.com/modern/head -->
+{% include head.html %}
+<link href="css/stylesheet.css" rel="stylesheet" />
+<!-- curl -o _includes/body-header.html http://rizzo.lonelyplanet.com/modern/body-header -->
+{% include body-header.html %}
+
+<div class="row row--content copy--body context--content">
+  <div class="row__inner row__inner--content">
+    <div class="row row--secondary" id="js-secondary-nav">
+      <div class="row__inner row__inner--secondary">
+        <div class="split--left row__title--secondary">
+          <div class="icon--place--pin--before place-title"><a class="place-title-heading" href="{{baseurl}}">Tech Blog</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-wrapper--10">
+      
+      <div class="col--one-fifth">
+
+        <ul class="nav nav-list">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li class="nav-header">
+            <a href="/about.html">About Us</a>
+          </li>
+          <li class="rss">
+            <a href="/feed.xml">RSS Feed</a>
+          </li>
+          <li class="github">
+            <a href="https://github.com/lonelyplanet">Github</a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/lonelyplanet">Twitter</a>
+          </li>
+          <li class="linked_in">
+            <a href="http://www.linkedin.com/company/lonely-planet">LinkedIn</a>
+          </li>
+          <li class="coderwall">
+            <a href="https://coderwall.com/team/lonely-planet/">coderwall</a>
+          </li>
+          <li class="jobs">
+            <a href="http://www.lonelyplanet.com/jobs/" class="hero-unit">Now Hiring</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col--four-fifths">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- curl -o _includes/body-footer.html http://rizzo.lonelyplanet.com/modern/body-footer -->
+{% include body-footer.html %}
+
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
   <head>
     <title>{{ page.title }}</title>
@@ -29,43 +87,7 @@
             
           </div>
         </div>
-        <div class="grid-wrapper--10">
-          
-          <div class="col--one-fifth">
-
-            <ul class="nav nav-list">
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li class="nav-header">
-                <a href="/about.html">About Us</a>
-              </li>
-              <li class="rss">
-                <a href="/feed.xml">RSS Feed</a>
-              </li>
-              <li class="github">
-                <a href="https://github.com/lonelyplanet">Github</a>
-              </li>
-              <li class="twitter">
-                <a href="https://twitter.com/lonelyplanet">Twitter</a>
-              </li>
-              <li class="linked_in">
-                <a href="http://www.linkedin.com/company/lonely-planet">LinkedIn</a>
-              </li>
-              <li class="coderwall">
-                <a href="https://coderwall.com/team/lonely-planet/">coderwall</a>
-              </li>
-              <li class="jobs">
-                <a href="http://www.lonelyplanet.com/jobs/" class="hero-unit">Now Hiring</a>
-              </li>
-            </ul>
-            
-
-          </div>
-
-          <div class="col--four-fifths">
-            {{ content }}
-          </div>
+        
 
         </div>
 
@@ -84,3 +106,4 @@
 </script>
 </body>
 </html>
+ -->

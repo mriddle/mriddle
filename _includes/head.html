@@ -1,0 +1,157 @@
+<!--[if (gt IE 8) | (IEMobile)]><!--><link href="//assets.staticlp.com/assets/common_core-c5ff8c86524526e6a2ebda67ff32107f.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]--><!--[if (lt IE 9) & (!IEMobile)]><link href="//assets.staticlp.com/assets/common_core_ie-b2b77840a6622e948e23011bb27ffa54.css" media="all" rel="stylesheet" type="text/css" /><![endif]-->
+<link href='//www.lonelyplanet.com/favicon.ico' rel='icon' type='image/gif'>
+<!--[if lt IE 9]>
+<script>
+  document.createElement('header');
+  document.createElement('nav');
+  document.createElement('section');
+  document.createElement('article');
+  document.createElement('aside');
+  document.createElement('footer');
+  document.createElement('figure');
+  document.createElement('figurecap');
+  document.createElement('hgroup');
+  document.createElement('time');
+</script>
+<![endif]-->
+<script>
+  // Setup our namespace
+  window.lp = {};
+  
+  // Utility cookie retrieval function
+  window.lp.getCookie = function (name) {
+    return unescape(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + escape(name).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+  };
+  
+  // Test for LocalStorage support (and space)
+  window.lp.supports = {};
+  window.lp.supports.localStorage = 'localStorage' in window && (function() {
+    try {
+      localStorage.setItem("test", "test");
+      localStorage.removeItem("test");
+      return true;
+    } catch(e){
+      return false;
+    }
+  }());
+  
+  // Setup js error logging
+  var _trackJs = {
+    customer: '3cd28f4c5df14f6e9fffa815ed7712b0',
+    globalAlias: false,
+    consoleDisplay: true,
+    userId: window.lp.getCookie('lpUid')
+  };
+  
+  // Switch no-js class for js
+  (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+  
+  // Initialise a flamsteed buffer
+  window.lp.fs = {
+    buffer: [], 
+    log : function(x){this.buffer.push({e: x})},
+    time: function(x){!!window.performance && !!window.performance.now && this.buffer.push({e: x, t: window.performance.now()})}
+  };
+  
+  // Dev analytics package
+  (function(d,t,c){
+    if (!d.cookie.match(/lpDev/)) return;
+    var g=d.createElement(t);
+    var s=d.getElementsByTagName(t)[0];
+    g.src="//assets.staticlp.com/analytics/analytics.dev.js?"+c.getTime();
+    s.parentNode.insertBefore(g,s);
+  }(document,"script",new Date));
+</script>
+<script>
+  if('querySelector' in document && 
+     'localStorage' in window && 
+     'addEventListener' in window &&
+     'classList' in document.documentElement) {
+    (function(H){H.className=H.className.replace(/\bbase\b/,'enhanced')})(document.documentElement);
+    window.lp.enhanced = true;
+  }
+</script>
+
+<script>
+  if (window.lp.enhanced && window.localStorage.getItem('_lpfont') == "true") {
+    var ss = document.createElement('link'),
+        firstLink = document.getElementsByTagName('link')[0],
+        fontPath = "//assets.staticlp.com/assets/fonts-e7917f9cfeeb9cc0cff58f06f7ecd6b0.css";
+  
+    
+    ss.href= fontPath;
+    ss.rel = "stylesheet";
+    ss.type = "text/css";
+    firstLink.parentNode.insertBefore(ss, firstLink);
+  
+    // Replace the no-freight classname
+    (function(H){H.className=H.className.replace(/\bno-freight\b/,'freight')})(document.documentElement);
+  }
+</script>
+
+<script>
+  (function() {
+    var docElement = document.documentElement,
+        activePath = "//assets.staticlp.com/assets/icons/active-a863f94e0975254b63a6b191afceb5ff.css",
+        criticalPath = "//assets.staticlp.com/assets/icons/critical-c6c92dc99d15ff5f7ac9896475db482c.css";
+    function styleSheet(path) {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = path;
+      return link;
+    }
+    window.setTimeout(function(){
+      var script = document.getElementsByTagName("script")[0];
+      var head = script.parentNode;
+      if ("background-size" in docElement.style || "backgroundSize" in docElement.style) {
+        head.insertBefore(styleSheet(activePath), script);
+        docElement.className += " supports-svg";
+      } else {
+        head.insertBefore(styleSheet(criticalPath), script);
+        docElement.className += " no-background-size";
+      }
+    }, 0)
+  }());
+</script>
+<noscript>
+<link href='//assets.staticlp.com/assets/icons/critical-c6c92dc99d15ff5f7ac9896475db482c.css' rel='stylesheet'>
+</noscript>
+
+<script>
+  var require = {
+    baseUrl: '/assets',
+    paths: {
+      flamsteed: "flamsteed/lib/javascripts/flamsteed",
+      gpt: "//www.googletagservices.com/tag/js/gpt",
+      hogan: "hogan/dist/hogan-3.0.0.amd",
+      jplugs: "jquery-plugins",
+      jquery:  "jquery/jquery",
+      pointer: "pointer",
+      sailthru: "sailthru/v1",
+      sCode: "omniture/s_code",
+      touchwipe: "jquery.touchwipe.1.1.1",
+      trackjs: "trackjs/trackjs",
+      dfp: "jquery.dfp.js/jquery.dfp",
+      autocomplete: "autocomplete/dist/autocomplete"
+    },
+    waitSeconds: 30
+  };
+</script>
+
+<script>
+  (function(d, s) {
+    var ie = document.documentElement.className.match(/ie([0-9]+)/);
+    if (window.lp.enhanced || ie) {
+      var firstJs, js;
+      firstJs = d.getElementsByTagName(s)[0];
+      js = d.createElement(s);
+      js.async = true;
+      js.src = "//assets.staticlp.com/assets/requirejs/require-53ae9b9fdc87c2e9ed6c9679aa8d3746.js";
+      js.setAttribute("data-main", "//assets.staticlp.com/assets/app_core-998ca1411cec8a717c6e3a6f79ea6401.js");
+      firstJs.parentNode.insertBefore(js, firstJs);
+    }
+  })(document, 'script');
+</script>
+
+

@@ -1,26 +1,15 @@
         {% assign author = site.authors[post.author] %}
-        <div class="post">
-          <div class="row-fluid">
-            <div class="span12 well">
-              <div class="span10">
-                <div class="post_title">
-                  <a href="{{ site.baseurl }}{{ post.url }}"><h3 class="copy--h3">{{ post.title }}</h3></a>
-                </div>
-                <div class="post_content">
-                  <p>{{ post.excerpt }}</p>
-                </div>
-                <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
-              </div>
-              <div class="post_details">
-                <div class="published">
-                  <div class="modified">
-                    <div class="published_date">
-                      <span class="modified_on">{{ post.date | date_to_string }}</span> by <span class="modified_by">{{ author.display_name }}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="post card card--page card--page--article">
+
+          <div class="post_title">
+            <a href="{{ site.baseurl }}{{ post.url }}"><h3 class="copy--h3">{{ post.title }}</h3></a>
+          </div>
+          <div class="post_content">
+            <p>{{ post.excerpt }}</p>
+          </div>
+          <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a>
+              
+          <div class="published_date">
+            <span class="modified_on">{{ post.date | date_to_string }}</span> by <span class="modified_by">{{ author.display_name }}</span>
           </div>
         </div>
-

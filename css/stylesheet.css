@@ -1,21 +1,6 @@
-h1.title--blog {
-  padding: 12px 0;
-  color: #fff;
-}
+
 code, pre {
   font-size: 14px;
-}
-.post {
-  background-color: #ffffff;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-
-.post_details {
-  color: #999999;
-  line-height: 26px;
-  font-size: 85%;
-  margin: 20px;
 }
 
 .published_header {
