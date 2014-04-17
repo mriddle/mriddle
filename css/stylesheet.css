@@ -58,11 +58,15 @@ table.data {
   table.data td {
     border: 1px solid #999999;
     padding: 5px; }
+.row__title--secondary {
+  width: 100%;
+  max-width: 100%;
+}
 .icon-glasses {
   background: transparent url('../img/glasses.png') no-repeat left top 5px;
   display: block;
   height: 30px;
-  width: 250px;
+  width: 100%;
 }
 .place-title {
   padding-left: 62px;
