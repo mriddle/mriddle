@@ -58,3 +58,18 @@ table.data {
   table.data td {
     border: 1px solid #999999;
     padding: 5px; }
+.icon-glasses {
+  background: transparent url('../img/glasses.png') no-repeat left top 5px;
+  display: block;
+  height: 30px;
+  width: 250px;
+}
+.place-title {
+  padding-left: 62px;
+  margin-left: 5px;
+}
+.icon--rss, .icon--twitter {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
