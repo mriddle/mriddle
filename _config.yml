@@ -3,7 +3,5 @@ markdown: redcarpet
 highlighter: pygments
 safe: true
 lsi: false
-baseurl:
+baseurl: /mriddle.github.io
 url: mriddle.com
-about: Hi there! My name is Matthew Riddle and this is my log of programming related solutions and tutorials that I have written or found on the net which have proven useful. It's kept primary for my own memory but is shared to help others.
-slogan: It's a feature not a bug!
