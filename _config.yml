@@ -5,3 +5,5 @@ safe: true
 lsi: false
 baseurl:
 url: mriddle.com
+
+theme: jekyll-theme-minimal
