@@ -6,7 +6,7 @@
 
 Thanks for poping by, I'm a Team Lead and Staff Engineer @Zendesk with strong roots in Ruby on Rails. If you want to know more about me, just ask! But if you're after a TL;DR; this would be it:
 
-I am:
+**I am**
 
 🔭 Working on improving the reliability and scalability of systems at Zendesk. Talking points Rails upgrades (with dual booting 🙌), unique IDs when it comes to systems at scale, horizontal sharding, circtuit breakers, query killing, and more.
 
