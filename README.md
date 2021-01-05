@@ -8,7 +8,7 @@ Thanks for poping by, I'm a Team Lead and Staff Engineer @Zendesk with strong ro
 
 **I am**
 
-🔭 Working on improving the reliability and scalability of systems at Zendesk. Talking points Rails upgrades (with dual booting 🙌), unique IDs when it comes to systems at scale, horizontal sharding, circtuit breakers, query killing, and more.
+🔭 Working on improving the reliability and scalability of systems at Zendesk. Talking points Rails upgrades (with dual booting 🙌), unique IDs when it comes to systems at scale, horizontal sharding, circuit breakers, query killing, and more.
 
 🌱 Learning how to lead and grow a team.
 
