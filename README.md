@@ -8,11 +8,11 @@ Thanks for poping by, I'm a Team Lead and Staff Engineer @Zendesk with strong ro
 
 **I am**
 
-🔭 Working on improving the reliability and scalability of systems at Zendesk. Talking points Rails upgrades (with dual booting 🙌), unique IDs when it comes to systems at scale, horizontal sharding, circtuit breakers, query killing, and more.
+🔭 Working on improving the reliability and scalability of systems at Zendesk. Talking points would be: Rails upgrades (with dual booting 🙌), unique IDs when it comes to systems at scale, horizontal sharding, circtuit breakers, query killing, and more.
 
 🌱 Learning how to lead and grow a team.
 
-👯 Looking to collaborate on multiple database support in Rails 6 and [fill open positions](https://jobs.zendesk.com/us/en/job/R14355/) within my team.
+💭 Open for discussions and collaboration around multiple database support in Rails 6 and looking 🔍 to [fill open positions](https://jobs.zendesk.com/us/en/job/R14355/) within my team.
 
 📫 How to reach me: hello@mriddle.com or if that's not your jam: [![Twitter Badge](https://img.shields.io/badge/-@mriddle89-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/mriddle89)](https://twitter.com/mriddle89) 
 [![Linkedin Badge](https://img.shields.io/badge/mriddle-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mriddle/)](https://www.linkedin.com/in/mriddle/)
