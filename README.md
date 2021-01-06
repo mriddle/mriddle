@@ -4,11 +4,11 @@
 
 # Hello, friend, :wave:
 
-Thanks for poping by, I'm a Team Lead and Staff Engineer @zendesk. Previously @ferocia and @lonelyplanet. 🦘in 🇩🇰- I enjoy 💻🚴‍♂️📸🎮 and if you want to know more about me, just ask! But if you're after a TL;DR; this would be it:
+Thanks for popping by, I'm a Team Lead and Staff Engineer @zendesk. Previously @ferocia and @lonelyplanet. 🦘in 🇩🇰- I enjoy 💻🚴‍♂️📸🎮 and if you want to know more about me, just ask! But if you're after a TL;DR; this would be it:
 
 **I am**
 
-🔭 Working on improving the reliability and scalability of systems at Zendesk. Talking points would be: Rails upgrades (with dual booting 🙌), unique IDs when it comes to systems at scale, horizontal sharding, circtuit breakers, query killing, and more.
+🔭 Working on improving the reliability and scalability of systems at Zendesk. Talking points would be: Rails upgrades (with dual booting 🙌), unique IDs when it comes to systems at scale, horizontal sharding, circuit breakers, query killing, and more.
 
 🌱 Learning how to lead and grow a team.
 
