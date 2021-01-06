@@ -4,7 +4,7 @@
 
 # Hello, friend, :wave:
 
-Thanks for poping by, I'm a Team Lead and Staff Engineer @Zendesk with strong roots in Ruby on Rails. If you want to know more about me, just ask! But if you're after a TL;DR; this would be it:
+Thanks for poping by, I'm a Team Lead and Staff Engineer @zendesk. Previously @ferocia and @lonelyplanet. 🦘in 🇩🇰- I enjoy 💻🚴‍♂️📸🎮 and if you want to know more about me, just ask! But if you're after a TL;DR; this would be it:
 
 **I am**
 
