@@ -16,6 +16,6 @@ I work on a small team of Ruby and Rails specialists in Copenhagen and our missi
 
 If this kind of work excites you and you'd like to be apart of it then please reach out!
 
-📫 Available via [![Twitter Badge](https://img.shields.io/badge/-@mriddle89-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/mriddle89)](https://twitter.com/mriddle89) 
+[![Twitter Badge](https://img.shields.io/badge/-@mriddle89-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/mriddle89)](https://twitter.com/mriddle89) 
 [![Linkedin Badge](https://img.shields.io/badge/mriddle-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mriddle/)](https://www.linkedin.com/in/mriddle/)
 [![Strava Badge](https://img.shields.io/badge/-mriddle89-FC4C02?style=flat-square&labelColor=FC4C02&logo=strava&logoColor=white&link=https://www.strava.com/athletes/mriddle89)](https://www.strava.com/athletes/mriddle89) 
