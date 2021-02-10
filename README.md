@@ -6,7 +6,7 @@
 
 Thanks for popping by, I'm a Team Lead and Staff Engineer @zendesk. Previously @ferocia and @lonelyplanet. 🦘in 🇩🇰 - I enjoy 💻🚴‍♂️📸🎮 
 
-I work on a small team of Ruby and Rails specialists in Copenhagen and our mission is to imrpove the reliability of systems and enable our Engineering Organization to scale while contributing to the Open Source community. We work on stuff like:
+I work on a small team of Ruby and Rails specialists in Copenhagen and our mission is to improve the reliability of systems and enable our Engineering Organization to scale while contributing to the Open Source community. We work on stuff like:
 
  - Query Killer: Monitor and kill long running queries that might negatively impact our clusters. Queries are flagged so the owning teams can improve the performance, keeping our customers happy and systems healthy. 
  - Circuit Breaker: Adding a protective layer to our applications which monitors health and limits requests when approaching an unhealthy state.
