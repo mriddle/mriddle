@@ -4,15 +4,29 @@
 
 # Hello, friend! :wave:
 
-Thanks for popping by, I'm a Team Lead and Staff Engineer @zendesk. Previously @ferocia and @lonelyplanet. 🦘in 🇩🇰 - I enjoy 💻🚴‍♂️📸🎮 
+Thanks for popping by, I'm a software engineer and team lead for a team of backend focused engineers @zendesk. I've previously worked @ferocia and @lonelyplanet.
 
-I work in a small team of Ruby and Rails specialists in Copenhagen and our mission is to improve the reliability of systems and enable our Engineering Organization to scale while contributing to the Open Source community. We work on stuff like:
+Here's some information about me and my team to give you an idea of where we like to spend our time. It's team focused because, hey, that's what I do :D
+
+**Team Purpose**
+
+To take the lead on solving common problems that are essential to the business, exercising our Ruby on Rails expertise by providing standardized solutions and guidance that is scalable and re-usable across the organization allowing teams to focus on what they do best, saving money, time and effort.
+
+**Team Mission**
+
+Pave the way forward to Rails main for services at Zendesk, empowering Ruby and Rails developers with conventions and guidance along the way, and enabling them to deliver value faster by focusing on what they do best and what makes their services unique.
+
+Reduce cost and cognitive overhead associated with org-wide initiatives by solving business critical problems with simple and battle tested libraries applicable to the majority of Ruby services.
+
+Stop re-invention and enable innovation through community empowered knowledge and standards
+
+**Examples of our work**
 
  - Infrastructure: We [use sharding](https://medium.com/zendesk-engineering/the-history-of-infrastructure-at-zendesk-constant-tradeoffs-bdfa916ff4c3) at Zendesk and added multiple database support ([ARS](https://github.com/zendesk/active_record_shards/), [ARHP](https://github.com/zendesk/active_record_host_pool)) to Rails before it was [a thing](https://guides.rubyonrails.org/active_record_multiple_databases.html). Now that it's here, we're moving our systems over to it.
  - Reliability: We've outgrown our [existing](https://github.com/zendesk/global_uid) unique ID solution and need a way to safely migrate to [something more robust](https://medium.com/zendesk-engineering/how-probable-are-collisions-with-ulids-monotonic-option-d604d3ed2de).
- - Scaling: We're currently serving thousands to tens of thousands of requests per second depending on the service, and we continue to iterate on our systems to handle this sustained growth. We work on Pocs to identify bottlenecks as we look to handle 2x, 5x, 10x the amount of traffic we have today.
+ - Scaling: We're currently serving thousands to tens of thousands of requests per second depending on the service, and we continue to iterate on our systems to handle this sustained growth. We create and maintain battle-tested libraries to support the needs of the business and our 100+ Ruby services.
   - Query Killer: Monitor and kill long running queries that might negatively impact our clusters. Queries are flagged so the owning teams can improve the performance, keeping our customers happy and systems healthy. 
- - Circuit Breaker: Adding a protective layer to our applications which monitors health and limits requests when approaching an unhealthy state.
+ - Maintainability: We're tracking the current state of Ruby on Rails at Zendesk and work to ensure that our peers have what they need to run the latest version of Rails.
 
 If this kind of work excites you and you'd like to be apart of it then please reach out!
 
