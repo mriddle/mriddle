@@ -9,3 +9,10 @@ Outside of work, he recharges by spending time with family, reading, or riding h
 Originally from Australia, now living and working in Denmark.
 
 [mriddle.com](https://www.mriddle.com) • [LinkedIn](https://www.linkedin.com/in/mriddle/)
+
+Though most of my contributions are in private repositories, these public examples highlight my approach to problem-solving:
+ - https://github.com/zendesk/global_uid/pull/63
+ - https://github.com/zendesk/active_record_host_pool/pull/48
+ - https://github.com/fastlane/fastlane/pull/4808
+ - https://github.com/Shopify/bootboot/pull/33
+ - https://github.com/DataDog/dd-trace-rb/pull/1426
