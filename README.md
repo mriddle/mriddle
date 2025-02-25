@@ -1,4 +1,4 @@
-You've found Matt, 👋 a Staff Software Engineer @ Zendesk, working on the Modernization team to scale and evolve one of the oldest and largest Rails apps around.
+You've found Matt, 👋 a Staff Software Engineer @ Zendesk, working on the Modernization team to scale and evolve one of the oldest and largest Rails apps—handling over 2 billion hits per day.
 
 With 15 years of experience in startups and global companies, he's moved between management and IC roles, always focusing on high-impact modernization, solving tough technical challenges, and supporting teams. Whether it's revamping legacy systems, untangling technical messes, or mentoring others, the goal is always the same—making things better for people and for systems.
 
