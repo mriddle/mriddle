@@ -1,19 +1,18 @@
-http://mriddle.github.io
+You've found Matt, 👋 a Staff Software Engineer @ Zendesk, working on the Modernization team to scale and evolve one of the oldest and largest Rails apps—handling over 2 billion hits per day.
 
-### Writing a post
+With 15 years of experience in startups and global companies, he's moved between management and IC roles, always focusing on high-impact modernization, solving tough technical challenges, and supporting teams. Whether it's revamping legacy systems, untangling technical messes, or mentoring others, the goal is always the same—making things better for people and for systems.
 
-Write your drafts under the `_drafts` folder with a filename like `2000-01-31-lol-wut.md`
-When you're ready to publish a post move it into the `_posts` folder.
+A passion for learning, sharing knowledge, and bringing clarity to complexity shapes his approach, often through writing.
 
-### Deployment
+Outside of work, he recharges by spending time with family, reading, or riding his bike.
 
-`git push`
+Originally from Australia, now living and working in Denmark.
 
-Setup with just the `gh-pages` branch so anything you do in this branch will be displayed on the site on push. (It can take up to 10 minutes to be reflected)
+[mriddle.com](https://www.mriddle.com) • [LinkedIn](https://www.linkedin.com/in/mriddle/)
 
-### Development
-
-`jekyll serve --watch --baseurl ""`
-
-Run the following line from within the project and make your changes.
-Jekyll will automatically update as you updated the blog
+Though most of my contributions are in private repositories, these public examples highlight my approach to problem-solving:
+ - https://github.com/zendesk/global_uid/pull/63
+ - https://github.com/zendesk/active_record_host_pool/pull/48
+ - https://github.com/fastlane/fastlane/pull/4808
+ - https://github.com/Shopify/bootboot/pull/33
+ - https://github.com/DataDog/dd-trace-rb/pull/1426

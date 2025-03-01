@@ -1,9 +1,7 @@
-name: mriddle.com
-markdown: redcarpet
-highlighter: pygments
-safe: true
-lsi: false
+site: Matthew Riddle
+url: https://mriddle.com
+title: Matthew Riddle
+description: Personal site of Matthew Riddle
 baseurl:
-url: mriddle.com
-
 theme: jekyll-theme-minimal
+highlighter: rouge
