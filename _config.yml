@@ -3,6 +3,10 @@ url: https://mriddle.com
 title: Matthew Riddle
 description: Personal site of Matthew Riddle
 
+
+plugins:
+  - jekyll-sitemap
+
 # Defaults
 # # Where things are
 # source              : .
