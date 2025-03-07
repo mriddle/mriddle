@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Matthew Riddle - Software Developer</title>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
-    {% seo %}
-  </head>
-  <body>
-    <div id="navigation">
-      <p id="bio">
-        You've found Matt, he's a father, husband, and software developer. When he's not working, he's probably playing with his kids, reading books, or riding his bike.
-      </p>
-    </div>
+---
+layout: compress
+---
 
-    <div id='container'>
-      {{ content }}
-    </div>
+<!DOCTYPE html>
+<html lang="en" >
+  {% include head.html %}
+  <body>
+    <main>
+
+	    {% include navigation.html %}
+
+        {{ content }}
+
+    </main>
+
   </body>
 </html>

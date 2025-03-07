@@ -1,4 +1,20 @@
 ---
 layout: default
-title: mriddle.com
 ---
+
+<section class="posts">
+  <h2>You've found Matt! 👋</h2>
+  <p>An Australian living and working in Denmark. When he's not working, he's
+    spending time with his wife and two kids, reading, or riding bikes. He loves
+    exploring the outdoors—especially with his kids—playing, inventing new
+    games, and sharing in their discoveries as they grow. Making the most of
+    everyday moments
+  </p>
+
+  <h2>Latest Posts</h2>
+<ul>
+{% for post in site.posts limit:5 %}
+<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></li>
+{% endfor %}
+</ul>
+</section>

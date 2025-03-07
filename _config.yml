@@ -5,6 +5,37 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+navigation:
+  links:
+  - title: Home
+    url: /
+  - title: Posts
+    url: /posts
+  - title: Memos
+    url: /memos
+  - title: Resources
+    url: /resources
+  - title: Search
+    url: /search
+  - title: Archives
+    url: /archives
+  - title: About
+    url: /about
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  memos:
+    output: true
+    permalink: /memos/:year/:month/:day/:slug
+  resources:
+    output: true
+    permalink: /resources/:year/:month/:day/:slug
+
 # Config:
 compress_html:
   clippings: all
