@@ -8,3 +8,7 @@ gem 'jekyll-sitemap'
 # what books are available, where they are, and when they were last updated.
 # A sitemap works the same way for websites, helping search engines quickly
 # find and organize all the pages.
+
+gem 'jekyll-seo-tag'
+# Whhy? Add metadata tags for search engines and social networks to better
+# index and display your site's content.

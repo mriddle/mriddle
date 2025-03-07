@@ -1,11 +1,31 @@
 site: Matthew Riddle
 url: https://mriddle.com
-title: Matthew Riddle
-description: Personal site of Matthew Riddle
 
 
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Config: jekyll-seo-tag
+author:
+  name: Matthew Riddle
+title: Matt's Hearth
+tagline:
+  A Campfire for Shared Learning and Growth
+description:
+  This campfire offers sparks of quick insights, logs of deeper
+  explorations, and embers of past experiences. It's a space for sharing my
+  thoughts, workarounds, and discoveries - not a perfectly structured knowledge
+  base, but a place where ideas are explored, revisited, and where we might
+  learn and grow together.
+social:
+  name: Matthew Riddle
+  links:
+    - https://www.linkedin.com/in/mriddle
+    - https://github.com/mriddle
+    - https://bsky.app/profile/mriddle89.bsky.social
+    - https://ruby.social/@mriddle
+    - https://x.com/mriddle89
 
 # Defaults
 # # Where things are
