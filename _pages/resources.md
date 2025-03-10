@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Resources
-permalink: /resources/
 ---
 
 <div class="resources">
