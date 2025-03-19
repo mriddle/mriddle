@@ -9,18 +9,18 @@ navigation:
   links:
   - title: Home
     url: /
-  - title: Posts
-    url: /posts
-  - title: Memos
-    url: /memos
-  - title: Resources
-    url: /resources
-  - title: Search
-    url: /search
-  - title: Archives
-    url: /archives
-  - title: About
-    url: /about
+  # - title: Posts
+  #   url: /posts
+  # - title: Memos
+  #   url: /memos
+  # - title: Resources
+  #   url: /resources
+  # - title: Search
+  #   url: /search
+  # - title: Archives
+  #   url: /archives
+  # - title: About
+  #   url: /about
 
 collections:
   pages:
