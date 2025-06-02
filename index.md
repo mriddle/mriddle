@@ -5,9 +5,8 @@ title: Home
 
 # Matthew Riddle
 
-Staff Software Engineer at Zendesk, working on the Modernization team to scale
-and evolve one of the oldest and largest Rails apps—handling over 2 billion hits
-per day.
+Staff Software Engineer at Be My Eyes, working to improve the lives of the blind 
+and visually impaired through technology.
 
 With 15 years of experience across startups and global companies, he's moved between
 management and IC roles, always focusing on high-impact modernization, solving
