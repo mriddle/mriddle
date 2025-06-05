@@ -5,8 +5,8 @@ title: About
 
 # Matthew Riddle
 
-Staff Software Engineer at Be My Eyes, working to improve the lives of the blind and 
-visually impaired through technology.
+Staff Software Engineer at Be My Eyes, working to improve the lives of people who are 
+blind or have low vision through technology
 
 With 16 years of experience across startups and global companies, he's moved between
 management and IC roles, always focusing on high-impact modernization, solving
