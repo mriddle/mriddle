@@ -20,7 +20,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # Repo variable SITE_MODE=lol deploys the static lol/ folder instead of the Jekyll site.
       - name: Setup Ruby
+        if: vars.SITE_MODE != 'lol'
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
@@ -28,11 +30,14 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
+        if: vars.SITE_MODE != 'lol'
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ vars.SITE_MODE == 'lol' && 'lol' || '_site' }}
 
   deploy:
     environment:
