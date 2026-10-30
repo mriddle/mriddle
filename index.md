@@ -5,10 +5,10 @@ title: Home
 
 # Matthew Riddle
 
-Staff Software Engineer at Be My Eyes, working to improve the lives of people who are 
-blind or have low vision through technology
+Senior Manager at Terma. Previously Staff Software Engineer at Be My Eyes, working
+to improve the lives of people who are blind or have low vision through technology
 
-With 15 years of experience across startups and global companies, he's moved between
+With 17 years of experience across startups and global companies, he's moved between
 management and IC roles, always focusing on high-impact modernization, solving
 tough technical challenges, and supporting teams. Whether it's revamping legacy
 systems, untangling technical messes, or mentoring others, the goal is always
